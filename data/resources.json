@@ -1,0 +1,561 @@
+{
+  "schema_version": "fieldscheduler-resources-sample/v2",
+  "machines": [
+    {
+      "id": "664743b3-01c5-5391-bc4d-7cbeac2eeb51",
+      "name": "Traktor 1",
+      "type": "TRACTOR",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "PLOUGH": 4.0,
+        "SOW": 5.0,
+        "FERTILIZE": 10.0,
+        "CULTIVATE": 6.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    },
+    {
+      "id": "abe390fd-bb06-5d62-82cc-a66b5793bf94",
+      "name": "Traktor 2",
+      "type": "TRACTOR",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "PLOUGH": 4.0,
+        "SOW": 5.0,
+        "FERTILIZE": 10.0,
+        "CULTIVATE": 6.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    },
+    {
+      "id": "90c06ba3-5c00-5765-9812-adfc21df750c",
+      "name": "Kombajn 1",
+      "type": "COMBINE",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "HARVEST": 4.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    },
+    {
+      "id": "ad4b3d55-3023-52a5-b03b-907e10f17107",
+      "name": "Postřikovač 1",
+      "type": "SPRAYER",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "SPRAY": 12.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    },
+    {
+      "id": "f7d8c060-6ebb-5c17-bdef-ca8a89d86e5f",
+      "name": "Stroj 5",
+      "type": "TRACTOR",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "PLOUGH": 4.0,
+        "SOW": 5.0,
+        "FERTILIZE": 10.0,
+        "CULTIVATE": 6.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    },
+    {
+      "id": "eb7cb0a1-7e12-5b61-8c62-c4352ab3e314",
+      "name": "Stroj 6",
+      "type": "TRACTOR",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "PLOUGH": 4.0,
+        "SOW": 5.0,
+        "FERTILIZE": 10.0,
+        "CULTIVATE": 6.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    },
+    {
+      "id": "6117d2ec-8b32-5b51-aca7-793ba416506b",
+      "name": "Stroj 7",
+      "type": "SPRAYER",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "SPRAY": 12.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    },
+    {
+      "id": "ac144e69-97ea-5ce5-8eb1-05f0649bb913",
+      "name": "Stroj 8",
+      "type": "SPRAYER",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "SPRAY": 12.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    },
+    {
+      "id": "32fe06e8-14c4-5ba0-82e6-b9459ad6f1a5",
+      "name": "Stroj 9",
+      "type": "COMBINE",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "HARVEST": 4.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    },
+    {
+      "id": "6a0ca78e-4d8e-57b5-8cdd-459cb5139c08",
+      "name": "Stroj 10",
+      "type": "COMBINE",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "HARVEST": 4.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    },
+    {
+      "id": "b28357a4-3d4e-5606-b38c-d2567ee5677e",
+      "name": "Stroj 11",
+      "type": "TRACTOR",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "PLOUGH": 4.0,
+        "SOW": 5.0,
+        "FERTILIZE": 10.0,
+        "CULTIVATE": 6.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    },
+    {
+      "id": "37e73cb2-d42b-5ee6-b1bf-aaf1d52c18f3",
+      "name": "Stroj 12",
+      "type": "TRACTOR",
+      "home_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "PLOUGH": 4.0,
+        "SOW": 5.0,
+        "FERTILIZE": 10.0,
+        "CULTIVATE": 6.0
+      },
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "rate_source": "SYNTHETIC_EXAMPLE_REPLACE_WITH_MEASURED_RATE"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "1596fa26-826a-5904-b4e7-d2eaf68c6e1e",
+      "name": "Pluh 1",
+      "type": "PLOUGH",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "PLOUGH": 4.0
+      },
+      "is_non_disruptive": false
+    },
+    {
+      "id": "3c824950-d102-5828-91bd-b86b5754444c",
+      "name": "Secí stroj 1",
+      "type": "SEEDER",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "SOW": 5.0
+      },
+      "is_non_disruptive": false
+    },
+    {
+      "id": "fa0d745a-9c7c-50a3-8271-4181eece679e",
+      "name": "Kultivátor 1",
+      "type": "CULTIVATOR",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "CULTIVATE": 6.0
+      },
+      "is_non_disruptive": false
+    },
+    {
+      "id": "711f8689-431e-52a6-b85f-1f094cafc17c",
+      "name": "Brány 1",
+      "type": "HARROW",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "HARROW": 6.0
+      },
+      "is_non_disruptive": false
+    },
+    {
+      "id": "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93",
+      "name": "Secí stroj 2",
+      "type": "SEEDER",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "SOW": 5.0
+      },
+      "is_non_disruptive": false
+    },
+    {
+      "id": "8c6a9565-2c67-510e-ab1d-662b836831a8",
+      "name": "Válec 1",
+      "type": "ROLLER",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "ROLL": 6.0
+      },
+      "is_non_disruptive": false
+    },
+    {
+      "id": "e72b433a-47de-5e60-8e62-15c0dca3ec15",
+      "name": "Postřikovací nádrž 1",
+      "type": "SPRAYER_TANK",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "SPRAY": 12.0
+      },
+      "is_non_disruptive": false
+    },
+    {
+      "id": "ed2f22bc-e7c6-54a9-83fb-2dba032390a1",
+      "name": "Postřikovací nádrž 2",
+      "type": "SPRAYER_TANK",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "SPRAY": 12.0
+      },
+      "is_non_disruptive": false
+    },
+    {
+      "id": "3a650798-7e96-5ffd-bb2f-243b5f750778",
+      "name": "Postřikovací nádrž 3",
+      "type": "SPRAYER_TANK",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "SPRAY": 12.0
+      },
+      "is_non_disruptive": false
+    },
+    {
+      "id": "01082a03-3ac8-55cf-a69b-166a21d73f84",
+      "name": "Žací lišta 1",
+      "type": "HEADER",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "HARVEST": 4.0
+      },
+      "is_non_disruptive": false
+    },
+    {
+      "id": "7626597f-cb64-568a-8e16-71a6c5acb7de",
+      "name": "Žací lišta 2",
+      "type": "HEADER",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "HARVEST": 4.0
+      },
+      "is_non_disruptive": false
+    },
+    {
+      "id": "09bd9cc9-a927-57cf-ba00-f5f52f2a25d6",
+      "name": "Žací lišta 3",
+      "type": "HEADER",
+      "current_location_id": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "productivity_ha_per_hour": {
+        "HARVEST": 4.0
+      },
+      "is_non_disruptive": false
+    }
+  ],
+  "compatibilities": [
+    {
+      "machine_id": "664743b3-01c5-5391-bc4d-7cbeac2eeb51",
+      "equipment_id": "1596fa26-826a-5904-b4e7-d2eaf68c6e1e",
+      "compatible": true
+    },
+    {
+      "machine_id": "664743b3-01c5-5391-bc4d-7cbeac2eeb51",
+      "equipment_id": "3c824950-d102-5828-91bd-b86b5754444c",
+      "compatible": true
+    },
+    {
+      "machine_id": "664743b3-01c5-5391-bc4d-7cbeac2eeb51",
+      "equipment_id": "fa0d745a-9c7c-50a3-8271-4181eece679e",
+      "compatible": true
+    },
+    {
+      "machine_id": "664743b3-01c5-5391-bc4d-7cbeac2eeb51",
+      "equipment_id": "711f8689-431e-52a6-b85f-1f094cafc17c",
+      "compatible": true
+    },
+    {
+      "machine_id": "664743b3-01c5-5391-bc4d-7cbeac2eeb51",
+      "equipment_id": "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93",
+      "compatible": true
+    },
+    {
+      "machine_id": "664743b3-01c5-5391-bc4d-7cbeac2eeb51",
+      "equipment_id": "8c6a9565-2c67-510e-ab1d-662b836831a8",
+      "compatible": true
+    },
+    {
+      "machine_id": "abe390fd-bb06-5d62-82cc-a66b5793bf94",
+      "equipment_id": "1596fa26-826a-5904-b4e7-d2eaf68c6e1e",
+      "compatible": true
+    },
+    {
+      "machine_id": "abe390fd-bb06-5d62-82cc-a66b5793bf94",
+      "equipment_id": "3c824950-d102-5828-91bd-b86b5754444c",
+      "compatible": true
+    },
+    {
+      "machine_id": "abe390fd-bb06-5d62-82cc-a66b5793bf94",
+      "equipment_id": "fa0d745a-9c7c-50a3-8271-4181eece679e",
+      "compatible": true
+    },
+    {
+      "machine_id": "abe390fd-bb06-5d62-82cc-a66b5793bf94",
+      "equipment_id": "711f8689-431e-52a6-b85f-1f094cafc17c",
+      "compatible": true
+    },
+    {
+      "machine_id": "abe390fd-bb06-5d62-82cc-a66b5793bf94",
+      "equipment_id": "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93",
+      "compatible": true
+    },
+    {
+      "machine_id": "abe390fd-bb06-5d62-82cc-a66b5793bf94",
+      "equipment_id": "8c6a9565-2c67-510e-ab1d-662b836831a8",
+      "compatible": true
+    },
+    {
+      "machine_id": "f7d8c060-6ebb-5c17-bdef-ca8a89d86e5f",
+      "equipment_id": "1596fa26-826a-5904-b4e7-d2eaf68c6e1e",
+      "compatible": true
+    },
+    {
+      "machine_id": "f7d8c060-6ebb-5c17-bdef-ca8a89d86e5f",
+      "equipment_id": "3c824950-d102-5828-91bd-b86b5754444c",
+      "compatible": true
+    },
+    {
+      "machine_id": "f7d8c060-6ebb-5c17-bdef-ca8a89d86e5f",
+      "equipment_id": "fa0d745a-9c7c-50a3-8271-4181eece679e",
+      "compatible": true
+    },
+    {
+      "machine_id": "f7d8c060-6ebb-5c17-bdef-ca8a89d86e5f",
+      "equipment_id": "711f8689-431e-52a6-b85f-1f094cafc17c",
+      "compatible": true
+    },
+    {
+      "machine_id": "f7d8c060-6ebb-5c17-bdef-ca8a89d86e5f",
+      "equipment_id": "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93",
+      "compatible": true
+    },
+    {
+      "machine_id": "f7d8c060-6ebb-5c17-bdef-ca8a89d86e5f",
+      "equipment_id": "8c6a9565-2c67-510e-ab1d-662b836831a8",
+      "compatible": true
+    },
+    {
+      "machine_id": "eb7cb0a1-7e12-5b61-8c62-c4352ab3e314",
+      "equipment_id": "1596fa26-826a-5904-b4e7-d2eaf68c6e1e",
+      "compatible": true
+    },
+    {
+      "machine_id": "eb7cb0a1-7e12-5b61-8c62-c4352ab3e314",
+      "equipment_id": "3c824950-d102-5828-91bd-b86b5754444c",
+      "compatible": true
+    },
+    {
+      "machine_id": "eb7cb0a1-7e12-5b61-8c62-c4352ab3e314",
+      "equipment_id": "fa0d745a-9c7c-50a3-8271-4181eece679e",
+      "compatible": true
+    },
+    {
+      "machine_id": "eb7cb0a1-7e12-5b61-8c62-c4352ab3e314",
+      "equipment_id": "711f8689-431e-52a6-b85f-1f094cafc17c",
+      "compatible": true
+    },
+    {
+      "machine_id": "eb7cb0a1-7e12-5b61-8c62-c4352ab3e314",
+      "equipment_id": "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93",
+      "compatible": true
+    },
+    {
+      "machine_id": "eb7cb0a1-7e12-5b61-8c62-c4352ab3e314",
+      "equipment_id": "8c6a9565-2c67-510e-ab1d-662b836831a8",
+      "compatible": true
+    },
+    {
+      "machine_id": "b28357a4-3d4e-5606-b38c-d2567ee5677e",
+      "equipment_id": "1596fa26-826a-5904-b4e7-d2eaf68c6e1e",
+      "compatible": true
+    },
+    {
+      "machine_id": "b28357a4-3d4e-5606-b38c-d2567ee5677e",
+      "equipment_id": "3c824950-d102-5828-91bd-b86b5754444c",
+      "compatible": true
+    },
+    {
+      "machine_id": "b28357a4-3d4e-5606-b38c-d2567ee5677e",
+      "equipment_id": "fa0d745a-9c7c-50a3-8271-4181eece679e",
+      "compatible": true
+    },
+    {
+      "machine_id": "b28357a4-3d4e-5606-b38c-d2567ee5677e",
+      "equipment_id": "711f8689-431e-52a6-b85f-1f094cafc17c",
+      "compatible": true
+    },
+    {
+      "machine_id": "b28357a4-3d4e-5606-b38c-d2567ee5677e",
+      "equipment_id": "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93",
+      "compatible": true
+    },
+    {
+      "machine_id": "b28357a4-3d4e-5606-b38c-d2567ee5677e",
+      "equipment_id": "8c6a9565-2c67-510e-ab1d-662b836831a8",
+      "compatible": true
+    },
+    {
+      "machine_id": "37e73cb2-d42b-5ee6-b1bf-aaf1d52c18f3",
+      "equipment_id": "1596fa26-826a-5904-b4e7-d2eaf68c6e1e",
+      "compatible": true
+    },
+    {
+      "machine_id": "37e73cb2-d42b-5ee6-b1bf-aaf1d52c18f3",
+      "equipment_id": "3c824950-d102-5828-91bd-b86b5754444c",
+      "compatible": true
+    },
+    {
+      "machine_id": "37e73cb2-d42b-5ee6-b1bf-aaf1d52c18f3",
+      "equipment_id": "fa0d745a-9c7c-50a3-8271-4181eece679e",
+      "compatible": true
+    },
+    {
+      "machine_id": "37e73cb2-d42b-5ee6-b1bf-aaf1d52c18f3",
+      "equipment_id": "711f8689-431e-52a6-b85f-1f094cafc17c",
+      "compatible": true
+    },
+    {
+      "machine_id": "37e73cb2-d42b-5ee6-b1bf-aaf1d52c18f3",
+      "equipment_id": "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93",
+      "compatible": true
+    },
+    {
+      "machine_id": "37e73cb2-d42b-5ee6-b1bf-aaf1d52c18f3",
+      "equipment_id": "8c6a9565-2c67-510e-ab1d-662b836831a8",
+      "compatible": true
+    },
+    {
+      "machine_id": "ad4b3d55-3023-52a5-b03b-907e10f17107",
+      "equipment_id": "e72b433a-47de-5e60-8e62-15c0dca3ec15",
+      "compatible": true
+    },
+    {
+      "machine_id": "ad4b3d55-3023-52a5-b03b-907e10f17107",
+      "equipment_id": "ed2f22bc-e7c6-54a9-83fb-2dba032390a1",
+      "compatible": true
+    },
+    {
+      "machine_id": "ad4b3d55-3023-52a5-b03b-907e10f17107",
+      "equipment_id": "3a650798-7e96-5ffd-bb2f-243b5f750778",
+      "compatible": true
+    },
+    {
+      "machine_id": "6117d2ec-8b32-5b51-aca7-793ba416506b",
+      "equipment_id": "e72b433a-47de-5e60-8e62-15c0dca3ec15",
+      "compatible": true
+    },
+    {
+      "machine_id": "6117d2ec-8b32-5b51-aca7-793ba416506b",
+      "equipment_id": "ed2f22bc-e7c6-54a9-83fb-2dba032390a1",
+      "compatible": true
+    },
+    {
+      "machine_id": "6117d2ec-8b32-5b51-aca7-793ba416506b",
+      "equipment_id": "3a650798-7e96-5ffd-bb2f-243b5f750778",
+      "compatible": true
+    },
+    {
+      "machine_id": "ac144e69-97ea-5ce5-8eb1-05f0649bb913",
+      "equipment_id": "e72b433a-47de-5e60-8e62-15c0dca3ec15",
+      "compatible": true
+    },
+    {
+      "machine_id": "ac144e69-97ea-5ce5-8eb1-05f0649bb913",
+      "equipment_id": "ed2f22bc-e7c6-54a9-83fb-2dba032390a1",
+      "compatible": true
+    },
+    {
+      "machine_id": "ac144e69-97ea-5ce5-8eb1-05f0649bb913",
+      "equipment_id": "3a650798-7e96-5ffd-bb2f-243b5f750778",
+      "compatible": true
+    },
+    {
+      "machine_id": "90c06ba3-5c00-5765-9812-adfc21df750c",
+      "equipment_id": "01082a03-3ac8-55cf-a69b-166a21d73f84",
+      "compatible": true
+    },
+    {
+      "machine_id": "90c06ba3-5c00-5765-9812-adfc21df750c",
+      "equipment_id": "7626597f-cb64-568a-8e16-71a6c5acb7de",
+      "compatible": true
+    },
+    {
+      "machine_id": "90c06ba3-5c00-5765-9812-adfc21df750c",
+      "equipment_id": "09bd9cc9-a927-57cf-ba00-f5f52f2a25d6",
+      "compatible": true
+    },
+    {
+      "machine_id": "32fe06e8-14c4-5ba0-82e6-b9459ad6f1a5",
+      "equipment_id": "01082a03-3ac8-55cf-a69b-166a21d73f84",
+      "compatible": true
+    },
+    {
+      "machine_id": "32fe06e8-14c4-5ba0-82e6-b9459ad6f1a5",
+      "equipment_id": "7626597f-cb64-568a-8e16-71a6c5acb7de",
+      "compatible": true
+    },
+    {
+      "machine_id": "32fe06e8-14c4-5ba0-82e6-b9459ad6f1a5",
+      "equipment_id": "09bd9cc9-a927-57cf-ba00-f5f52f2a25d6",
+      "compatible": true
+    },
+    {
+      "machine_id": "6a0ca78e-4d8e-57b5-8cdd-459cb5139c08",
+      "equipment_id": "01082a03-3ac8-55cf-a69b-166a21d73f84",
+      "compatible": true
+    },
+    {
+      "machine_id": "6a0ca78e-4d8e-57b5-8cdd-459cb5139c08",
+      "equipment_id": "7626597f-cb64-568a-8e16-71a6c5acb7de",
+      "compatible": true
+    },
+    {
+      "machine_id": "6a0ca78e-4d8e-57b5-8cdd-459cb5139c08",
+      "equipment_id": "09bd9cc9-a927-57cf-ba00-f5f52f2a25d6",
+      "compatible": true
+    }
+  ]
+}

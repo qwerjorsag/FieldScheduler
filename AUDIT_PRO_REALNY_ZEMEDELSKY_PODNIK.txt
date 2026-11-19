@@ -1,0 +1,185 @@
+AUDIT PŘIPRAVENOSTI PRO REÁLNÝ ZEMĚDĚLSKÝ PODNIK
+18. 11. 2026. Rozsah: zdrojové soubory v tomto projektu, datový generátor a
+nový demonstrační běh. Jde o technický audit, ne certifikaci provozu, bezpečnosti,
+agronomie nebo právní shody. Cílem je spolehlivý systém pro náročný podnik.
+
+HLAVNÍ ZJIŠTĚNÍ
+Projekt má použitelný základ optimalizace, ale zatím není jednotným provozním
+systémem pro rostlinnou a živočišnou výrobu. Největší mezera není počet funkcí,
+nýbrž propojení skutečných provozních dat, všech omezení a nezávislého ověření
+do jediné používané plánovací cesty.
+
+V repozitáři jsou dvě cesty:
+1. data/generate_sample_run.py -> fieldscheduler/engine.py: tato cesta nyní
+   vytváří soubory v Schedules. Má pevně vybrané pracovníky a soupravy.
+2. bundles.py, optimizer.py, replan.py a podpůrné moduly: bohatší kandidáti,
+   dělení práce, počasí, exekuční fakta a certifikace přejezdů.
+Existence modulu sama nedokládá jeho použití ve vzorovém běhu ani jeho ověření
+na skutečné farmě. Je třeba obě cesty sjednotit a zabránit rozdílným pravidlům.
+
+CO BYLO V TOMTO KROKU SKUTEČNĚ ZAPOJENO
+- starting_date.json: jedno místo pro počáteční datum, zónu, délku horizontu
+  a časový krok; kalendářní den se převádí do UTC včetně změn letního času.
+- fields.json: výměra a korekce výkonu podle obtížnosti pozemku.
+- resources.json: výkon stroje a nářadí pro konkrétní operaci, příprava a hluk.
+- workers.json: činnosti, oprávněná pole a stroje, 720 minut práce za den,
+  týdenní limit a minimální odpočinek. Oprávnění se před řešením ověřují.
+- farm_inputs.py: výpočet trvání z plochy, pomalejšího prvku soupravy a faktoru
+  pole; kontrola kompatibility, kladných konečných výkonů a výměr.
+- farm_policy.py + engine.py: kalendářní denní i ISO týdenní pracovní limit,
+  pracovní okno 04:00–24:00, po 22:00 jen výslovně nerušivá činnost a technika,
+  odpočinek mezi pracovními dny, penalizace skutečných navazujících změn polí
+  a konfigurovatelná minimální rezerva mezi nimi. Samostatná kontrola výsledku.
+- timeline.py: časové SVG tabulky se jmény pracovníků nebo názvy polí v řádcích.
+- Textový katalog činností pro 15 skupin zemědělských pracovišť.
+
+CO Z TOHO NEVYPLÝVÁ
+- Katalog je návrh šablon. Neznamená, že solver již plánuje opakované dojení,
+  krmení, porodny, rybníky a jejich kapacity. Fixture dosud vyžaduje kladnou
+  plochu a pracovníka se strojem; to není vhodný univerzální model pro chov.
+- Pevný přidělený pracovník se kontroluje. Jeho automatická výměna za jiného
+  oprávněného pracovníka ve vzorovém běhu ještě neprobíhá.
+- preferred_field_ids jsou připravená metadata; současný účinný cíl omezuje
+  změny polí v pořadí pevně přidělených úkolů. Nejde o dynamické rozdělení revírů.
+- Výkony jsou ilustrační čísla, nikoli kalibrované parametry skutečných strojů.
+- Rezerva na změnu pole není vypočtená cesta, její náklady ani odpracovaná doba.
+  Vzorový běh hlásí NOT_IMPLEMENTED:TRAVEL_CERTIFICATE a validated=false.
+- Pořadí 4 operací během 21 dnů zůstává označenou technickou simulací. Není to
+  návrh skutečného pěstebního cyklu. Ukázkové názvy Sad/Louka jsou stále pole
+  typu ARABLE_FIELD; změna názvu sama nevytvoří jiný druh zemědělského provozu.
+- Základní odpočinek mezi dny není úplná implementace zákonného režimu v každém
+  klouzavém intervalu 24 hodin. Přestávky a směnový rozsah nejsou plně modelovány.
+
+PRIORITA P0: PŘED PROVOZNÍM POUŽITÍM
+
+P0-1 Jednotná plánovací a validační cesta
+Důkaz: sample runner volá solve_fixture; bohatší optimize_work_units a replan
+jsou samostatné. Přenést nové politiky do společných doménových kontraktů,
+odstranit duplicitu, propojit kandidáty, zdroje, práci, přesuny a validaci.
+Akceptace: tentýž snapshot dává stejná pravidla bez ohledu na vstup CLI/API;
+nepodporovaný vstup se pojmenuje, nikdy tiše nevynechá.
+
+P0-2 Skutečné přejezdy a logistika
+Použít travel.py a travel_certificate.py v používané cestě. Doplnit směrované
+trasy, kategorie strojů, šířky, mosty, brány, uzavírky a přívěsy. Čas řidiče,
+přejezdy, přípravy, mytí a tankování započítat do práce, nákladů i odpočinku.
+Akceptace: každý stroj a člověk fyzicky dosáhne následující lokace, návrat je
+zajištěn tam, kde je povinný; chybějící trasa blokuje provozní publikaci.
+
+P0-3 Pracovní režim, únava a bezpečnost
+12 hodin je požadovaný strop, nikoli automaticky přípustná směna. Přidat
+přestávky, nepřetržitou práci, rozsah směny, klouzavý denní odpočinek, týdenní
+odpočinek, noční režim, přesčasy, historii před začátkem horizontu a přesah za
+jeho konec. Zahrnout nepřítomnosti, zdravotní omezení, zástup a rizikové práce
+vyžadující dvě osoby. Pravidla nastavovat pro jurisdikci a pracovní kategorii.
+Akceptace: nelze splnit limit 12 h tím, že je člověk na pracovišti 20 h; nelze
+obejít odpočinek posunutím začátku plánovacího horizontu. Viz zdroj MPSV v katalogu.
+
+P0-4 Agronomické podmínky místo demonstračních odstupů
+Oddělit plodinu, odrůdu, vegetační fázi, datum založení, očekávanou sklizeň,
+osevní postup a technologii. Zásahy odvozovat od schválených šablon, stavu,
+měření a skutečných přípravků. Při použití přípravku automaticky blokovat vstup,
+sklizeň či další práci dle etikety. Ochranné lhůty nesmí být univerzální konstanty.
+Akceptace: nezralý porost ani blokované pole se neplánuje ke sklizni; bezorebná
+technologie nevyžaduje orbu; ochrana rostlin není povinná bez důvodu.
+
+P0-5 Živočišná výroba a neodkladná péče
+Rozšířit jednotky práce o kusy, skupiny, litry, tuny a pevné časy. Zavést denní
+opakování a maximální prodlevy mezi dojeními/krmeními, porodní a veterinární
+události, pohotovost a kritické alarmy vody, ventilace a kyslíku. Nepoužívat
+fiktivní hektary nebo stroje pro lidskou kontrolu. Dojení vázat na laktující skupiny.
+Akceptace: nelze zlepšit ekonomický cíl vynecháním kritické péče; pokrytí běží
+i přes hranici dnů a horizontu, s výslovnou politikou pro 00:00–04:00.
+
+P0-6 Provozní stav, částečné dokončení a publikace
+Využít execution.py a replan.py: plán, schválení, zahájení, přerušení, skutečně
+hotové množství, důvod odchylky, uzamčení a nové plánování. Zakázat dvojí odpis
+stejných hektarů, zvířat nebo šarže. Stav naplánováno neoznačovat jako splněno.
+Akceptace: po poruše zůstane hotová část zachována a přeplánuje se jen zbytek;
+publikovat lze jen výsledek s kompletní validací všech relevantních oblastí.
+
+P0-7 Vstupní data a měřitelné ověření
+Verzované schéma a migrace, explicitní jednotky, přísné typy, referenční integrita,
+ochrana proti neplatným datům/NaN a chybějícím kvalifikacím, časová platnost
+oprávnění. Založit reprezentativní provozní scénáře a nezávislé regresní kontroly.
+Akceptace: změna jednotky nebo chybějící oprávnění nemůže projít do rozpisu;
+každý běh má reprodukovatelný snapshot, verzi kódu, limity a výsledek kontroly.
+
+PRIORITA P1: POUŽITELNOST A VÝKON V PODNIKU
+
+P1-1 Dynamické přiřazování týmů a souprav
+Napojit bundle kandidáty a kompetence na konkrétní operaci/lokaci. Optimalizovat
+kontinuitu lidí, změny nářadí, náklady, preference a zatížení. Zachovat kvalifikace
+a dostupnost jako tvrdé podmínky. Podporovat více lidí a strojů na jednom úkolu;
+bundles.py nyní pro některé vícečetné role vrací NOT_IMPLEMENTED.
+
+P1-2 Počasí, půda a nejistota
+weather.py existuje; vzorový běh ho nepoužívá. Přidat skutečné předpovědi/stanice,
+pravděpodobnost srážek, vítr, půdní vlhkost a únosnost, aktualizaci a expiraci dat.
+Rozlišit krátkodobý závazný plán od vzdáleného orientačního. Při nejistotě uvádět
+scénáře, rezervy a příčinu změny. Neoznačovat chybějící měření za dobré počasí.
+
+P1-3 Výkony a dělení práce
+Měřit efektivní výkon podle soupravy, pole, obsluhy a podmínek. Zahrnout souvratě,
+svah, záběr, plnění zásobníku, průtok a vlastní prostoje. Napojit work_units.py
+tak, aby dlouhé práce šly přerušit, ale nezdvojovala se plocha ani příprava.
+U chovu a skleníku používat jiné jednotky a kapacitní modely.
+
+P1-4 Skladové a navazující kapacity
+Osivo, hnojiva, postřiky, krmivo, podestýlka, palivo, voda a obaly. Příjem,
+rezervace, spotřeba, šarže a doplnění. Kapacity sušárny, dopravy, chlazení,
+mléčného tanku, žlabu a expedice musí omezovat předcházející práce.
+
+P1-5 Hygiena, biosafety a sdílení prostoru
+Zdravé/rizikové skupiny, čisté/špinavé zóny, karanténa, očista souprav a osob,
+oddělené nářadí, zákaz přesunu mezi provozy bez sanitace. Do hlukové politiky
+přidat obytné zóny, konkrétní technologii a výjimky s odpovědnou osobou.
+Stejné pole může mít oddělené bloky; souběh povolovat pouze s explicitní kapacitou.
+
+P1-6 Ekonomika a vysvětlení rozhodnutí
+Hierarchie: bezpečnost a welfare -> povinné termíny -> splněný objem a ztráty
+-> náklady -> stabilita rozpisu, přesuny a preference. Uvádět mez optimálnosti,
+čas výpočtu, nejlepší nalezenou variantu a příčiny nenaplánovaných úkolů.
+Stav FEASIBLE znamená nalezené řešení modelu, nikoli důkaz optimálnosti či praxe.
+
+P1-7 Evidence, API a více uživatelů
+Trvalé úložiště s transakcemi, izolace podniků, role, historie změn, souběh editací,
+verze plánu, idempotentní import událostí, zálohování a obnova. Nepotřebuje to
+frontend v tomto kroku, ale datové kontrakty a API musí být připravené.
+
+PRIORITA P2: ŠPIČKOVÝ PROVOZ A ŠKÁLOVÁNÍ
+- GIS skutečných hranic pozemků, ochranná pásma a zóny aplikace; ne jen bod vjezdu.
+- Telemetrie techniky, ISOBUS/task data, GPS, dojírny, váhy, sklady a IoT alarmy;
+  vždy prověřit čas, jednotky, kvalitu a původ, ne slepě věřit senzoru.
+- Návrhy variant: vlastní technika vs. služby, počasí, porucha, nemoc, změna ceny.
+- Prediktivní údržba a rezervní kritické kapacity; ověřit přínos proti prostému
+  servisnímu kalendáři před nasazením složitého modelu.
+- Environmentální bilance: živiny, voda, energie, emise, eroze a biodiverzita;
+  konkrétní dotační/evidenční pravidla musí mít správný region a účinnost.
+- Postupné plánování od sezony po směnu, omezení počtu změn již vydaného rozpisu,
+  rychlý replan při poruše; škálování měřit na reálném objemu kandidátů a úkolů.
+- Vícejazyčnost, mobilní/offline hlášení, přístupnost a srozumitelné zdůvodnění
+  pro dispečera i pracovníka, až bude zadán frontend.
+- Bezpečnostní monitoring, přístup k citlivým údajům zaměstnanců, obnova po
+  výpadku, odpovědnost za manuální zásah a auditní stopa.
+
+DOPORUČENÉ POŘADÍ DALŠÍ REALIZACE
+1. Společný snapshot a preflight; produkční i ukázkový runner stejnými pravidly.
+2. Certifikované přesuny, pracovní režim včetně historie a skutečné kalendáře.
+3. Události a skutečné dokončení, bezpečný replan, šarže a skladové rezervace.
+4. Plodinové šablony s počasím a agronomií; opakované úlohy pro jednu pilotní stáj.
+5. Týmy, automatické přiřazení, navazující kapacity a vysvětlení konfliktů.
+6. Pilot s konkrétním podnikem, měření a až potom rozšíření na další provozy.
+
+PODMÍNKY ÚSPĚCHU PILOTU
+- Nulové nevysvětlené porušení tvrdých podmínek v nezávislém validátoru.
+- Žádná ztracená kritická péče, dvojí naplánování zdroje nebo dvojí odpis práce.
+- Pro každý vydaný úkol dohledatelný člověk, místo, technologie, předpoklady,
+  spotřeby, termín a zdroj oprávnění.
+- Měřit rozdíl plánované/skutečné doby, ztráty přesuny, včasnost operací,
+  zásahy dispečera, stabilitu replanů, výkon výpočtu a ekonomický přínos.
+- Cílové hodnoty určit s farmou podle výchozího stavu; neslibovat univerzální
+  procento úspory bez naměřených dat.
+
+Výstup je rozvojový plán s prioritami. Označení „pro nejlepší farmy“ musí být
+podloženo provozní spolehlivostí a měřitelnými výsledky, nikoli množstvím funkcí.

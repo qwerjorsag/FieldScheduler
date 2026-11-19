@@ -1,0 +1,676 @@
+{
+  "schema_version": 1,
+  "activities": [
+    {
+      "id": "FEED",
+      "fixed_setup_minutes": 12,
+      "animal_time_minutes_by_location_type": {"CATTLE": 0.8, "PIG": 0.25, "POULTRY": 0.08, "SHEEP": 0.35, "GOAT": 0.35, "STABLE": 0.6},
+      "name": "Krmení a kontrola napájení",
+      "location_types": [
+        "CATTLE",
+        "PIG",
+        "POULTRY",
+        "SHEEP",
+        "GOAT",
+        "STABLE"
+      ],
+      "skill": "ANIMAL_CARE",
+      "duration_minutes": 30,
+      "recurrence": {
+        "frequency": "DAILY",
+        "interval": 1,
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "06:00",
+        "16:00"
+      ],
+      "window_minutes": 240,
+      "priority": 0,
+      "is_non_disruptive": false,
+      "method": "Založit podle dávky skupiny; zkontrolovat vodu, funkci krmítek a příjem.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "HEALTH",
+      "fixed_setup_minutes": 20,
+      "animal_time_minutes_by_location_type": {"CATTLE": 0.35, "PIG": 0.12, "POULTRY": 0.03, "SHEEP": 0.2, "GOAT": 0.2, "STABLE": 0.3},
+      "name": "Zdravotní obchůzka",
+      "location_types": [
+        "CATTLE",
+        "PIG",
+        "POULTRY",
+        "SHEEP",
+        "GOAT",
+        "STABLE"
+      ],
+      "skill": "ANIMAL_CARE",
+      "duration_minutes": 30,
+      "recurrence": {
+        "frequency": "DAILY",
+        "interval": 1,
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 180,
+      "priority": 0,
+      "is_non_disruptive": true,
+      "method": "Chování, pohyb, příjem, úhyny; abnormality předat zootechnikovi.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "BEDDING",
+      "fixed_setup_minutes": 20,
+      "animal_time_minutes_by_location_type": {"CATTLE": 1.2, "PIG": 0.35, "POULTRY": 0.12, "SHEEP": 0.8, "GOAT": 0.8, "STABLE": 1.5},
+      "name": "Očista a doplnění podestýlky",
+      "location_types": [
+        "CATTLE",
+        "PIG",
+        "POULTRY",
+        "SHEEP",
+        "GOAT",
+        "STABLE"
+      ],
+      "skill": "ANIMAL_CARE",
+      "duration_minutes": 45,
+      "recurrence": {
+        "frequency": "DAILY",
+        "interval": 1,
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "09:00"
+      ],
+      "window_minutes": 480,
+      "priority": 1,
+      "is_non_disruptive": false,
+      "method": "Odstranit mokrá místa a doplnit čistou podestýlku podle systému.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "MILK",
+      "required_staff_by_milking_mode": {"ROBOTIC": 1, "MANUAL": 2},
+      "animal_time_minutes_by_milking_mode": {"ROBOTIC": 0.6, "MANUAL": 1.8},
+      "fixed_setup_minutes": 30,
+      "animal_time_minutes_by_location_type": {"MILKING": 1.8},
+      "name": "Dojení laktujících krav",
+      "location_types": ["CATTLE"],
+      "skill": "MILKING",
+      "duration_minutes": 90,
+      "recurrence": {
+        "frequency": "DAILY",
+        "interval": 1,
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "05:00",
+        "17:00"
+      ],
+      "window_minutes": 240,
+      "priority": -10,
+      "is_non_disruptive": false,
+      "method": "Příprava, hygiena, dojení, chlazení. Jen laktující skupiny.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "MILK_CLEAN",
+      "fixed_setup_minutes": 30,
+      "animal_time_minutes_by_location_type": {"MILKING": 0.0},
+      "name": "Sanitace dojírny",
+      "location_types": ["CATTLE"],
+      "skill": "MILKING",
+      "duration_minutes": 30,
+      "recurrence": {
+        "frequency": "DAILY",
+        "interval": 1,
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "08:30",
+        "20:30"
+      ],
+      "window_minutes": 120,
+      "priority": 0,
+      "is_non_disruptive": false,
+      "method": "Sanitace po příslušném dojení.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": "MILK",
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "EGGS",
+      "name": "Sběr a evidence vajec",
+      "location_types": [
+        "POULTRY"
+      ],
+      "skill": "ANIMAL_CARE",
+      "duration_minutes": 30,
+      "recurrence": {
+        "frequency": "DAILY",
+        "interval": 1,
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "10:00",
+        "15:00"
+      ],
+      "window_minutes": 120,
+      "priority": 1,
+      "is_non_disruptive": false,
+      "method": "Sběr, kontrola, označení šarže a uložení.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "WATER_CHECK",
+      "name": "Kontrola vody a ryb",
+      "location_types": [
+        "POND"
+      ],
+      "skill": "GENERAL",
+      "duration_minutes": 30,
+      "recurrence": {
+        "frequency": "DAILY",
+        "interval": 1,
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "05:00"
+      ],
+      "window_minutes": 180,
+      "priority": 0,
+      "is_non_disruptive": true,
+      "method": "Kyslík, teplota, hladina, přítok a chování ryb; alarmy řešit ihned.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "FISH_FEED",
+      "name": "Krmení ryb podle teploty",
+      "location_types": [
+        "POND"
+      ],
+      "skill": "GENERAL",
+      "duration_minutes": 30,
+      "recurrence": {
+        "frequency": "DAILY",
+        "interval": 1,
+        "anchor_date": "2026-01-01",
+        "season": [
+          "04-01",
+          "10-31"
+        ]
+      },
+      "times": [
+        "10:00"
+      ],
+      "window_minutes": 180,
+      "priority": 1,
+      "is_non_disruptive": false,
+      "method": "Krmit podle biomasy, příjmu, teploty a kyslíku; mimo sezonu individuální režim.",
+      "requires": [
+        "water_temperature",
+        "dissolved_oxygen",
+        "feeding_plan"
+      ],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "PASTURE_CHECK",
+      "name": "Kontrola pastviny a vody",
+      "location_types": [
+        "PASTURE"
+      ],
+      "skill": "GENERAL",
+      "duration_minutes": 30,
+      "recurrence": {
+        "frequency": "DAILY",
+        "interval": 1,
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 360,
+      "priority": 1,
+      "is_non_disruptive": true,
+      "method": "Napájení, oplocení, zvířata, porost; stav určuje další rotaci.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "GREENHOUSE_CARE",
+      "name": "Klima, závlaha a kontrola porostu",
+      "location_types": [
+        "GREENHOUSE"
+      ],
+      "skill": "GENERAL",
+      "duration_minutes": 60,
+      "recurrence": {
+        "frequency": "DAILY",
+        "interval": 1,
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "07:00"
+      ],
+      "window_minutes": 240,
+      "priority": 1,
+      "is_non_disruptive": false,
+      "method": "Zkontrolovat čidla, závlahu, klima a porost; zásahy podle měření.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "STORAGE_CHECK",
+      "name": "Kontrola skladu",
+      "location_types": [
+        "STORAGE"
+      ],
+      "skill": "GENERAL",
+      "duration_minutes": 30,
+      "recurrence": {
+        "frequency": "DAILY",
+        "interval": 1,
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "09:00"
+      ],
+      "window_minutes": 360,
+      "priority": 1,
+      "is_non_disruptive": true,
+      "method": "Teplota, vlhkost, škůdci, stav šarží a kapacita.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "SCOUT",
+      "name": "Monitoring porostu",
+      "location_types": [
+        "FIELD",
+        "ORCHARD",
+        "VINEYARD"
+      ],
+      "skill": "FIELD_SCOUT",
+      "duration_minutes": 30,
+      "recurrence": {
+        "frequency": "WEEKLY",
+        "interval": 1,
+        "weekdays": [
+          1
+        ],
+        "anchor_date": "2026-01-05",
+        "season": [
+          "03-01",
+          "10-31"
+        ]
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 480,
+      "priority": 2,
+      "is_non_disruptive": true,
+      "method": "Fenologie, choroby, škůdci, vláha; záznam rozhodnutí.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 1
+    },
+    {
+      "id": "PRUNE",
+      "name": "Řez a údržba opor",
+      "location_types": [
+        "ORCHARD",
+        "VINEYARD"
+      ],
+      "skill": "GENERAL",
+      "duration_minutes": 240,
+      "recurrence": {
+        "frequency": "YEARLY",
+        "interval": 1,
+        "month_days": [
+          "02-15"
+        ],
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 480,
+      "priority": 2,
+      "is_non_disruptive": false,
+      "method": "Druh a počasí určují termín; sanitace a údržba opor.",
+      "requires": [
+        "species_specific_pruning",
+        "weather"
+      ],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 21
+    },
+    {
+      "id": "FRUIT_PICK",
+      "name": "Sklizeň a třídění ovoce",
+      "location_types": [
+        "ORCHARD",
+        "VINEYARD"
+      ],
+      "skill": "GENERAL",
+      "duration_minutes": 240,
+      "recurrence": {
+        "frequency": "WEEKLY",
+        "interval": 1,
+        "weekdays": [
+          0,
+          3
+        ],
+        "anchor_date": "2026-01-05",
+        "season": [
+          "09-01",
+          "10-15"
+        ]
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 480,
+      "priority": 2,
+      "is_non_disruptive": false,
+      "method": "Postupné sklizňové průchody dle zralosti, navázat chlazení.",
+      "requires": [
+        "maturity",
+        "withdrawal_periods"
+      ],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "MOW",
+      "name": "Sečení louky",
+      "location_types": [
+        "MEADOW"
+      ],
+      "skill": "GENERAL",
+      "duration_minutes": 180,
+      "recurrence": {
+        "frequency": "YEARLY",
+        "interval": 1,
+        "month_days": [
+          "05-20",
+          "07-15",
+          "09-10"
+        ],
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 480,
+      "priority": 2,
+      "is_non_disruptive": false,
+      "method": "Zralost píce, předpověď, ochrana zvěře a režim pozemku.",
+      "requires": [
+        "forage_stage",
+        "dry_weather",
+        "wildlife_check"
+      ],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 4
+    },
+    {
+      "id": "HAY_COLLECT",
+      "name": "Sběr a uložení píce",
+      "location_types": [
+        "MEADOW"
+      ],
+      "skill": "GENERAL",
+      "duration_minutes": 180,
+      "recurrence": {
+        "frequency": "YEARLY",
+        "interval": 1,
+        "month_days": [
+          "05-23",
+          "07-18",
+          "09-13"
+        ],
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 480,
+      "priority": 2,
+      "is_non_disruptive": false,
+      "method": "Až po dosažení vhodné sušiny; zajistit sklad a dopravu.",
+      "requires": [
+        "forage_moisture",
+        "storage"
+      ],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": "MOW",
+      "minimum_gap_minutes": 2880,
+      "date_flex_days": 4
+    },
+    {
+      "id": "MEADOW_NUTRITION",
+      "name": "Posouzení výživy louky",
+      "location_types": [
+        "MEADOW"
+      ],
+      "skill": "FIELD_SCOUT",
+      "duration_minutes": 45,
+      "recurrence": {
+        "frequency": "YEARLY",
+        "interval": 1,
+        "month_days": [
+          "03-20",
+          "05-25",
+          "07-20"
+        ],
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 480,
+      "priority": 2,
+      "is_non_disruptive": true,
+      "method": "Rozbor, bilance a odvezená píce; dávka až po schválení.",
+      "requires": [
+        "soil_test",
+        "nutrient_budget"
+      ],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "GROVE_CHECK",
+      "name": "Péče o háj a bezpečnost stromů",
+      "location_types": [
+        "GROVE"
+      ],
+      "skill": "GENERAL",
+      "duration_minutes": 90,
+      "recurrence": {
+        "frequency": "MONTHLY",
+        "interval": 1,
+        "monthdays": [
+          10
+        ],
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 480,
+      "priority": 2,
+      "is_non_disruptive": true,
+      "method": "Kontrola stability, cest, odpadů a poškození; zásahy odborně.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "SERVICE",
+      "name": "Servis a kontrola zásob dílny",
+      "location_types": [
+        "WORKSHOP"
+      ],
+      "skill": "GENERAL",
+      "duration_minutes": 180,
+      "recurrence": {
+        "frequency": "WEEKLY",
+        "interval": 1,
+        "weekdays": [
+          1
+        ],
+        "anchor_date": "2026-01-05"
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 480,
+      "priority": 2,
+      "is_non_disruptive": false,
+      "method": "Motohodiny, závady, plán oprav a díly; podle návodu výrobce.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "TREATMENT",
+      "name": "Podmíněná ochrana rostlin",
+      "location_types": [
+        "FIELD",
+        "ORCHARD",
+        "VINEYARD"
+      ],
+      "skill": "FIELD_SCOUT",
+      "duration_minutes": 60,
+      "recurrence": {
+        "frequency": "EVENT",
+        "dates": []
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 480,
+      "priority": 1,
+      "is_non_disruptive": false,
+      "method": "Pouze po zjištění potřeby, schválení přípravku a podmínek.",
+      "requires": [
+        "agronomist_approval",
+        "label",
+        "weather",
+        "withdrawal_periods"
+      ],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 0
+    },
+    {
+      "id": "NUTRIENT_REVIEW",
+      "name": "Rozbor a plán výživy pole",
+      "location_types": [
+        "FIELD"
+      ],
+      "skill": "FIELD_SCOUT",
+      "duration_minutes": 45,
+      "recurrence": {
+        "frequency": "YEARLY",
+        "interval": 1,
+        "month_days": [
+          "02-20",
+          "09-01"
+        ],
+        "anchor_date": "2026-01-01"
+      },
+      "times": [
+        "08:00"
+      ],
+      "window_minutes": 480,
+      "priority": 1,
+      "is_non_disruptive": true,
+      "method": "Vyhodnotit rozbor, predplodinu, statkova hnojiva a cilovy vynos; schvalit bilanci.",
+      "requires": [],
+      "enabled": true,
+      "excluded_dates": [],
+      "depends_on": null,
+      "minimum_gap_minutes": 0,
+      "date_flex_days": 4
+    }
+  ]
+}

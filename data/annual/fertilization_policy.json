@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "mode": "CONDITIONAL_CAPACITY_RESERVATION",
+  "no_automatic_dose": true,
+  "minimum_split_gap_days": 21,
+  "routine_n_for_legumes": false,
+  "required_checks": [
+    "soil_test",
+    "nutrient_budget",
+    "previous_crop_and_manure_credits",
+    "yield_target",
+    "growth_stage",
+    "agronomist_approval",
+    "current_local_legal_windows",
+    "soil_not_frozen_snowcovered_saturated",
+    "water_buffers",
+    "weather"
+  ],
+  "sources": [
+    "https://ukzuz.gov.cz/public/portal/ukzuz/hnojiva-a-puda/evidence-hnojeni",
+    "https://mze.gov.cz/public/portal/mze/zivotni-prostredi/nitratova-smernice/navaznost-na-dotace"
+  ]
+}

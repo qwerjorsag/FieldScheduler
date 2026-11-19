@@ -1,0 +1,66 @@
+{
+  "schema_version": "fieldscheduler-operation-rules/v1",
+  "cycle_order": [
+    "PLOUGH",
+    "SOW",
+    "SPRAY",
+    "HARVEST"
+  ],
+  "rules": [
+    {
+      "id": "R1",
+      "name": "Orba před setím",
+      "predecessor_phase": "PLOUGH",
+      "successor_phase": "SOW",
+      "minimum_lag_hours": 24,
+      "hard": true,
+      "description": "Pole se nejprve zorá; setí může začít nejdříve 24 hodin po dokončení orby."
+    },
+    {
+      "id": "R2",
+      "name": "Setí před postřikem",
+      "predecessor_phase": "SOW",
+      "successor_phase": "SPRAY",
+      "minimum_lag_hours": 96,
+      "hard": true,
+      "description": "Postřik lze provést nejdříve 4 dny po dokončení setí."
+    },
+    {
+      "id": "R3",
+      "name": "Postřik před sklizní",
+      "predecessor_phase": "SPRAY",
+      "successor_phase": "HARVEST",
+      "minimum_lag_hours": 168,
+      "hard": true,
+      "description": "Sklizeň lze provést nejdříve 7 dní po dokončení postřiku."
+    },
+    {
+      "id": "R4",
+      "name": "Pracovni okno",
+      "shifts_local": [
+        [
+          "04:00",
+          "24:00"
+        ]
+      ],
+      "hard": true,
+      "quiet_after": "22:00",
+      "quiet_attribute": "is_non_disruptive"
+    },
+    {
+      "id": "R5",
+      "name": "Limity pracovníka",
+      "max_daily_minutes": 720,
+      "max_weekly_minutes": 2400,
+      "hard": true
+    },
+    {
+      "id": "R6",
+      "name": "Kolize zdrojů",
+      "description": "Pracovník, stroj, nástroj ani pole nesmí mít překrývající se úkoly.",
+      "hard": true
+    }
+  ],
+  "sample_only": true,
+  "agronomic_status": "COMPRESSED_TECHNICAL_DEMO_NOT_A_REAL_CROP_CALENDAR"
+}

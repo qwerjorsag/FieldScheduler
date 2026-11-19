@@ -1,0 +1,22 @@
+{
+  "checks_passed": [
+    "daily exceptions",
+    "monthly day31 skips invalid dates",
+    "leap day",
+    "empty event",
+    "season across new year",
+    "weekly fortnight",
+    "validity end",
+    "20 fields 50 locations",
+    "two feeds every day at nine sites",
+    "two milkings every day",
+    "all tasks allocated",
+    "independent annual validation",
+    "validator detects tampered duration",
+    "missing capacity retained",
+    "quiet night permitted",
+    "noisy night rejected"
+  ],
+  "count": 16,
+  "scope": "Calendar expansion and annual resource constraints; not agronomic or production certification"
+}

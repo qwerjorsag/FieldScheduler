@@ -1,0 +1,20 @@
+# Python-generated files and caches
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.pytest_cache/
+
+# Local environments and IDE files
+.venv/
+.idea/
+
+# Generated schedules and local run exports
+# The solver can regenerate these from data/ and main.py; they can be multiple GB.
+Schedules/
+data/annual_latest.json
+
+# Work instructions
+Work Instructions/

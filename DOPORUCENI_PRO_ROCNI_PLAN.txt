@@ -1,0 +1,77 @@
+DALŠÍ ZLEPŠENÍ ROČNÍHO PLÁNOVÁNÍ FARMY
+19. 11. 2026
+
+V tomto kroku vznikl roční model s 20 pěstebními poli, 50 lokalitami, databází
+plodin a BPEJ, opakovanými činnostmi a výběrem pracovníků podle kapacity.
+Hlavní rozdíl oproti krátké ukázce: běžná péče o provozy se generuje každý den,
+zatímco polní práce mají sezonní okna, příslušnou plodinu a návaznost ročníků.
+
+1. Skutečná geometrie a půda — první priorita
+Importovat LPIS/parcely, překryvy BPEJ a vzorkovací zóny. BPEJ má pět číslic:
+klimatický region; dvě číslice hlavní půdní jednotky; sklon/expozice; skelet/hloubka.
+Přidat naměřené pH, živiny, organickou hmotu, drenáž a erozi s datem rozboru.
+Vzorové přiřazení BPEJ nepoužívat pro reálné rozhodnutí bez ověření parcely.
+Zdroje: https://bpej.vumop.cz/51400 a další odkazy v data/annual/bpej_catalog.json.
+
+2. Výživa a právní podmínky — první priorita
+Automaticky sestavit bilanci z výnosového cíle, půdního rozboru, předplodiny,
+statkových hnojiv a jejich analýzy. Hlídání skutečné dávky v kg účinné živiny/ha
+musí být oddělené od tun produktu a od hektarů práce stroje. P/K, pH a dusík
+mají odlišné rozhodování. Zajistit schválení agronomem, legislativní pravidla
+s účinností pro konkrétní rok a parcelu, ochranu vod a stav půdy při aplikaci.
+Dosavadní výstup správně rezervuje kapacitu a nechává dávku neznámou.
+Zdroje: https://ukzuz.gov.cz/public/portal/ukzuz/hnojiva-a-puda/evidence-hnojeni
+https://mze.gov.cz/public/portal/mze/zivotni-prostredi/nitratova-smernice/navaznost-na-dotace
+
+3. Fenologie a průběžné přeplánování
+Roční termín je záměr, ne přesná předpověď. Každý týden aktualizovat plán podle
+počasí, vlhkosti, skutečného vzcházení, růstové fáze, zralosti a dostupnosti lidí.
+Závazné vydávat jen blízké směny. Uvádět, které podmínky ještě nejsou potvrzené.
+
+4. Dlouhodobý osevní postup a vhodnost plodiny
+Udržovat nejméně několik let historie po polích včetně čeledi, meziplodin,
+reziduí a zdravotních problémů. Automaticky kontrolovat návrat plodiny,
+předplodinu, erozní riziko a kapacity. Aktuální rok 2028 je návrh návazného
+cyklu, nikoli doklad splnění celého doporučeného intervalu rotace.
+Náročnost plodiny 1–5 je orientační; z půdních a meteorologických dat lze později
+vypočítat vysvětlitelné doporučení vhodnosti. Nepoužívat samotné číslo BPEJ
+jako univerzální pořadí od nejhorší po nejlepší půdu.
+
+5. Kalibrace živočišné výroby a automatické alarmy
+Trvání krmení, dojení, stlaní a čištění odvozovat od skupiny zvířat, technologie,
+kapacity dojírny, krmného vozu a počtu lidí. Sledovat maximální prodlevy péče,
+nemocná zvířata, porody a servisní výpadky. Kyslík rybníka, voda a ventilace
+vyžadují alarmy a zajištěnou reakci i mimo běžné pracovní okno.
+
+6. Fyzické přesuny, hygiena a práce týmů
+Nahradit paušální časovou rezervu skutečnými trasami, započíst jízdu do pracovní
+doby, určit řidiče, pohyb nářadí a mytí/dezinfekci mezi provozy. Jeden člověk
+na úkol nestačí pro každou operaci. Doplnit týmy, souběžné kapacity a zařízení
+pro stáje, sady a dopravu, nejen plošné polní soupravy.
+
+7. Sklad, logistika a provedení
+Ověřit osivo, krmiva, podestýlku, hnojiva, vodu a palivo před plánováním.
+Sklizeň omezit kapacitou dopravy, příjmu, sušárny a skladu. Hlášení skutečného
+provedení musí odpočítávat zbývající objem; naplánovaný úkol není hotový úkol.
+Evidence šarží a exekučních událostí musí být dostupná i po výpadku připojení.
+
+8. Jednotná optimalizace a provozní pravidla
+Roční alokace nyní používá transparentní heuristiku, krátká ukázka CP-SAT.
+Sjednotit doménová pravidla a validátory, roční plán použít jako vstup pro
+detailní optimalizaci blízkých dnů. Heuristika může hlásit nedostatek kapacity,
+i když jiné pořadí úkolů řešení má. Doplnit lokální opravy, alternativní varianty,
+měření kvality řešení a vysvětlení konfliktů. Nekládat roční rozpis s desítkami
+tisíc úloh bez rozdělení do jednoho neprůhledného výpočtu.
+
+9. Pracovní režim a spolehlivost vstupů
+Doplnit skutečné dovolené, zástupy, pohotovost, dostupnost techniky, pracovní
+historii před začátkem horizontu a úplná pravidla odpočinku a přesčasů podle
+jurisdikce. Přestávka není totéž co přejezd. Změnu opakování kritické péče
+validovat proti schválenému SOP. Databázové migrace, audit změn a role uživatelů
+mají předcházet plošnému provozu na skutečném podniku.
+
+10. Kritéria úspěšného pilotu
+Nejprve jedna farma, jeden skutečný rok plodin a jedna konkrétní stáj. Měřit
+včasnost kritické péče, skutečný výkon, změny dispečera, zbytečné přesuny,
+náklady, chybějící vstupy a prokazatelný přínos. Rozšiřovat podle výsledků.
+Provozní kvalitu nelze odvodit pouze z toho, že všech 365 dní má barevný rozpis.

@@ -1,0 +1,1287 @@
+{
+  "schema_version": 1,
+  "crops": [
+    {
+      "id": "WINTER_WHEAT",
+      "name": "Pšenice ozimá",
+      "family": "POACEAE",
+      "winter_crop": true,
+      "demands": {
+        "scale": "1 low - 5 high; illustrative agronomic classification",
+        "overall": 3,
+        "water": 3,
+        "nutrients": 3,
+        "labor": 2
+      },
+      "soil_requirements": {
+        "drainage": "well_drained",
+        "ph_range": [
+          6.0,
+          7.2
+        ],
+        "assessment": "Needs measured pH/texture; BPEJ alone is insufficient."
+      },
+      "recommended_rotation_break_years": 2,
+      "fertilization": {
+        "routine_mineral_n": true,
+        "dose_kg_per_ha": null,
+        "method": "Measured soil supply + previous crop/manure credits + target yield; approved nutrient budget before application. P/K and liming follow soil tests. No automatic nitrogen for legumes."
+      },
+      "stages": [
+        {
+          "id": "prepare",
+          "activity": "PREPARE",
+          "name": "Příprava půdy",
+          "start": "09-01",
+          "end": "09-15",
+          "offset": -1,
+          "after": null,
+          "min_gap_days": 0,
+          "requires": [
+            "soil_trafficable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "09-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "sow",
+          "activity": "SOW",
+          "name": "Setí / sázení",
+          "start": "09-15",
+          "end": "10-20",
+          "offset": -1,
+          "after": "prepare",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_temperature",
+            "seedbed_ready"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "09-15"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_1",
+          "activity": "FERTILIZE",
+          "name": "Výživa: rozhodnutí a podmíněná aplikace",
+          "start": "03-01",
+          "end": "03-31",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 7,
+          "requires": [
+            "soil_test",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_2",
+          "activity": "FERTILIZE",
+          "name": "Přihnojení podle růstové fáze",
+          "start": "04-01",
+          "end": "05-10",
+          "offset": 0,
+          "after": "nutrition_1",
+          "min_gap_days": 21,
+          "requires": [
+            "crop_stage",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "04-01"
+            ]
+          },
+          "is_non_disruptive": false,
+          "additional_after": [
+            "sow"
+          ]
+        },
+        {
+          "id": "harvest",
+          "activity": "HARVEST",
+          "name": "Sklizeň",
+          "start": "07-15",
+          "end": "08-20",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 180,
+          "requires": [
+            "maturity",
+            "moisture",
+            "withdrawal_periods",
+            "haulage_storage"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "07-15"
+            ]
+          },
+          "is_non_disruptive": false
+        }
+      ],
+      "calendar_basis": "Broad illustrative windows, temperate Czech region; adjust to cultivar and phenology."
+    },
+    {
+      "id": "SPRING_BARLEY",
+      "name": "Ječmen jarní",
+      "family": "POACEAE",
+      "winter_crop": false,
+      "demands": {
+        "scale": "1 low - 5 high; illustrative agronomic classification",
+        "overall": 2,
+        "water": 2,
+        "nutrients": 2,
+        "labor": 2
+      },
+      "soil_requirements": {
+        "drainage": "well_drained",
+        "ph_range": [
+          6.0,
+          7.2
+        ],
+        "assessment": "Needs measured pH/texture; BPEJ alone is insufficient."
+      },
+      "recommended_rotation_break_years": 2,
+      "fertilization": {
+        "routine_mineral_n": true,
+        "dose_kg_per_ha": null,
+        "method": "Measured soil supply + previous crop/manure credits + target yield; approved nutrient budget before application. P/K and liming follow soil tests. No automatic nitrogen for legumes."
+      },
+      "stages": [
+        {
+          "id": "prepare",
+          "activity": "PREPARE",
+          "name": "Příprava půdy",
+          "start": "03-01",
+          "end": "03-10",
+          "offset": 0,
+          "after": null,
+          "min_gap_days": 0,
+          "requires": [
+            "soil_trafficable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_1",
+          "activity": "FERTILIZE",
+          "name": "Základní výživa před založením porostu",
+          "start": "03-01",
+          "end": "04-15",
+          "offset": 0,
+          "after": "prepare",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_test",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "sow",
+          "activity": "SOW",
+          "name": "Setí / sázení",
+          "start": "03-10",
+          "end": "04-15",
+          "offset": 0,
+          "after": "nutrition_1",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_temperature",
+            "seedbed_ready"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-10"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "harvest",
+          "activity": "HARVEST",
+          "name": "Sklizeň",
+          "start": "07-15",
+          "end": "08-15",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 80,
+          "requires": [
+            "maturity",
+            "moisture",
+            "withdrawal_periods",
+            "haulage_storage"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "07-15"
+            ]
+          },
+          "is_non_disruptive": false
+        }
+      ],
+      "calendar_basis": "Broad illustrative windows, temperate Czech region; adjust to cultivar and phenology."
+    },
+    {
+      "id": "SILAGE_MAIZE",
+      "name": "Kukuřice na siláž",
+      "family": "POACEAE",
+      "winter_crop": false,
+      "demands": {
+        "scale": "1 low - 5 high; illustrative agronomic classification",
+        "overall": 4,
+        "water": 4,
+        "nutrients": 4,
+        "labor": 3
+      },
+      "soil_requirements": {
+        "drainage": "well_drained",
+        "ph_range": [
+          6.0,
+          7.2
+        ],
+        "assessment": "Needs measured pH/texture; BPEJ alone is insufficient."
+      },
+      "recommended_rotation_break_years": 2,
+      "fertilization": {
+        "routine_mineral_n": true,
+        "dose_kg_per_ha": null,
+        "method": "Measured soil supply + previous crop/manure credits + target yield; approved nutrient budget before application. P/K and liming follow soil tests. No automatic nitrogen for legumes."
+      },
+      "stages": [
+        {
+          "id": "prepare",
+          "activity": "PREPARE",
+          "name": "Příprava půdy",
+          "start": "03-01",
+          "end": "04-20",
+          "offset": 0,
+          "after": null,
+          "min_gap_days": 0,
+          "requires": [
+            "soil_trafficable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_1",
+          "activity": "FERTILIZE",
+          "name": "Základní výživa před založením porostu",
+          "start": "03-01",
+          "end": "05-20",
+          "offset": 0,
+          "after": "prepare",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_test",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "sow",
+          "activity": "SOW",
+          "name": "Setí / sázení",
+          "start": "04-20",
+          "end": "05-20",
+          "offset": 0,
+          "after": "nutrition_1",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_temperature",
+            "seedbed_ready"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "04-20"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_2",
+          "activity": "FERTILIZE",
+          "name": "Přihnojení podle růstové fáze",
+          "start": "06-01",
+          "end": "06-30",
+          "offset": 0,
+          "after": "nutrition_1",
+          "min_gap_days": 21,
+          "requires": [
+            "crop_stage",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "06-01"
+            ]
+          },
+          "is_non_disruptive": false,
+          "additional_after": [
+            "sow"
+          ]
+        },
+        {
+          "id": "harvest",
+          "activity": "HARVEST",
+          "name": "Sklizeň",
+          "start": "09-01",
+          "end": "10-10",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 80,
+          "requires": [
+            "maturity",
+            "moisture",
+            "withdrawal_periods",
+            "haulage_storage"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "09-01"
+            ]
+          },
+          "is_non_disruptive": false
+        }
+      ],
+      "calendar_basis": "Broad illustrative windows, temperate Czech region; adjust to cultivar and phenology."
+    },
+    {
+      "id": "WINTER_RAPE",
+      "name": "Řepka ozimá",
+      "family": "BRASSICACEAE",
+      "winter_crop": true,
+      "demands": {
+        "scale": "1 low - 5 high; illustrative agronomic classification",
+        "overall": 4,
+        "water": 4,
+        "nutrients": 4,
+        "labor": 4
+      },
+      "soil_requirements": {
+        "drainage": "well_drained",
+        "ph_range": [
+          6.0,
+          7.2
+        ],
+        "assessment": "Needs measured pH/texture; BPEJ alone is insufficient."
+      },
+      "recommended_rotation_break_years": 4,
+      "fertilization": {
+        "routine_mineral_n": true,
+        "dose_kg_per_ha": null,
+        "method": "Measured soil supply + previous crop/manure credits + target yield; approved nutrient budget before application. P/K and liming follow soil tests. No automatic nitrogen for legumes."
+      },
+      "stages": [
+        {
+          "id": "prepare",
+          "activity": "PREPARE",
+          "name": "Příprava půdy",
+          "start": "08-01",
+          "end": "08-15",
+          "offset": -1,
+          "after": null,
+          "min_gap_days": 0,
+          "requires": [
+            "soil_trafficable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "08-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "sow",
+          "activity": "SOW",
+          "name": "Setí / sázení",
+          "start": "08-15",
+          "end": "09-05",
+          "offset": -1,
+          "after": "prepare",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_temperature",
+            "seedbed_ready"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "08-15"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_1",
+          "activity": "FERTILIZE",
+          "name": "Výživa: rozhodnutí a podmíněná aplikace",
+          "start": "03-01",
+          "end": "03-31",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 7,
+          "requires": [
+            "soil_test",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_2",
+          "activity": "FERTILIZE",
+          "name": "Přihnojení podle růstové fáze",
+          "start": "04-01",
+          "end": "05-10",
+          "offset": 0,
+          "after": "nutrition_1",
+          "min_gap_days": 21,
+          "requires": [
+            "crop_stage",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "04-01"
+            ]
+          },
+          "is_non_disruptive": false,
+          "additional_after": [
+            "sow"
+          ]
+        },
+        {
+          "id": "harvest",
+          "activity": "HARVEST",
+          "name": "Sklizeň",
+          "start": "07-01",
+          "end": "07-25",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 180,
+          "requires": [
+            "maturity",
+            "moisture",
+            "withdrawal_periods",
+            "haulage_storage"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "07-01"
+            ]
+          },
+          "is_non_disruptive": false
+        }
+      ],
+      "calendar_basis": "Broad illustrative windows, temperate Czech region; adjust to cultivar and phenology."
+    },
+    {
+      "id": "PEA",
+      "name": "Hrách setý",
+      "family": "FABACEAE",
+      "winter_crop": false,
+      "demands": {
+        "scale": "1 low - 5 high; illustrative agronomic classification",
+        "overall": 2,
+        "water": 2,
+        "nutrients": 1,
+        "labor": 3
+      },
+      "soil_requirements": {
+        "drainage": "well_drained",
+        "ph_range": [
+          6.0,
+          7.2
+        ],
+        "assessment": "Needs measured pH/texture; BPEJ alone is insufficient."
+      },
+      "recommended_rotation_break_years": 5,
+      "fertilization": {
+        "routine_mineral_n": false,
+        "dose_kg_per_ha": null,
+        "method": "Measured soil supply + previous crop/manure credits + target yield; approved nutrient budget before application. P/K and liming follow soil tests. No automatic nitrogen for legumes."
+      },
+      "stages": [
+        {
+          "id": "prepare",
+          "activity": "PREPARE",
+          "name": "Příprava půdy",
+          "start": "03-01",
+          "end": "03-10",
+          "offset": 0,
+          "after": null,
+          "min_gap_days": 0,
+          "requires": [
+            "soil_trafficable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "sow",
+          "activity": "SOW",
+          "name": "Setí / sázení",
+          "start": "03-10",
+          "end": "04-15",
+          "offset": 0,
+          "after": "prepare",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_temperature",
+            "seedbed_ready"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-10"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "harvest",
+          "activity": "HARVEST",
+          "name": "Sklizeň",
+          "start": "07-01",
+          "end": "08-05",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 80,
+          "requires": [
+            "maturity",
+            "moisture",
+            "withdrawal_periods",
+            "haulage_storage"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "07-01"
+            ]
+          },
+          "is_non_disruptive": false
+        }
+      ],
+      "calendar_basis": "Broad illustrative windows, temperate Czech region; adjust to cultivar and phenology."
+    },
+    {
+      "id": "POTATO",
+      "name": "Brambory",
+      "family": "SOLANACEAE",
+      "winter_crop": false,
+      "demands": {
+        "scale": "1 low - 5 high; illustrative agronomic classification",
+        "overall": 5,
+        "water": 4,
+        "nutrients": 4,
+        "labor": 5
+      },
+      "soil_requirements": {
+        "drainage": "well_drained",
+        "ph_range": [
+          5.5,
+          6.5
+        ],
+        "assessment": "Needs measured pH/texture; BPEJ alone is insufficient."
+      },
+      "recommended_rotation_break_years": 4,
+      "fertilization": {
+        "routine_mineral_n": true,
+        "dose_kg_per_ha": null,
+        "method": "Measured soil supply + previous crop/manure credits + target yield; approved nutrient budget before application. P/K and liming follow soil tests. No automatic nitrogen for legumes."
+      },
+      "stages": [
+        {
+          "id": "prepare",
+          "activity": "PREPARE",
+          "name": "Příprava půdy",
+          "start": "03-01",
+          "end": "04-10",
+          "offset": 0,
+          "after": null,
+          "min_gap_days": 0,
+          "requires": [
+            "soil_trafficable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_1",
+          "activity": "FERTILIZE",
+          "name": "Základní výživa před založením porostu",
+          "start": "03-01",
+          "end": "05-10",
+          "offset": 0,
+          "after": "prepare",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_test",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "sow",
+          "activity": "SOW",
+          "name": "Setí / sázení",
+          "start": "04-10",
+          "end": "05-10",
+          "offset": 0,
+          "after": "nutrition_1",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_temperature",
+            "seedbed_ready"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "04-10"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "harvest",
+          "activity": "HARVEST",
+          "name": "Sklizeň",
+          "start": "08-20",
+          "end": "10-10",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 80,
+          "requires": [
+            "maturity",
+            "moisture",
+            "withdrawal_periods",
+            "haulage_storage"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "08-20"
+            ]
+          },
+          "is_non_disruptive": false
+        }
+      ],
+      "calendar_basis": "Broad illustrative windows, temperate Czech region; adjust to cultivar and phenology."
+    },
+    {
+      "id": "SUGAR_BEET",
+      "name": "Cukrovka",
+      "family": "AMARANTHACEAE",
+      "winter_crop": false,
+      "demands": {
+        "scale": "1 low - 5 high; illustrative agronomic classification",
+        "overall": 5,
+        "water": 4,
+        "nutrients": 4,
+        "labor": 4
+      },
+      "soil_requirements": {
+        "drainage": "well_drained",
+        "ph_range": [
+          6.0,
+          7.2
+        ],
+        "assessment": "Needs measured pH/texture; BPEJ alone is insufficient."
+      },
+      "recommended_rotation_break_years": 4,
+      "fertilization": {
+        "routine_mineral_n": true,
+        "dose_kg_per_ha": null,
+        "method": "Measured soil supply + previous crop/manure credits + target yield; approved nutrient budget before application. P/K and liming follow soil tests. No automatic nitrogen for legumes."
+      },
+      "stages": [
+        {
+          "id": "prepare",
+          "activity": "PREPARE",
+          "name": "Příprava půdy",
+          "start": "03-01",
+          "end": "03-20",
+          "offset": 0,
+          "after": null,
+          "min_gap_days": 0,
+          "requires": [
+            "soil_trafficable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_1",
+          "activity": "FERTILIZE",
+          "name": "Základní výživa před založením porostu",
+          "start": "03-01",
+          "end": "04-20",
+          "offset": 0,
+          "after": "prepare",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_test",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "sow",
+          "activity": "SOW",
+          "name": "Setí / sázení",
+          "start": "03-20",
+          "end": "04-20",
+          "offset": 0,
+          "after": "nutrition_1",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_temperature",
+            "seedbed_ready"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-20"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_2",
+          "activity": "FERTILIZE",
+          "name": "Přihnojení podle růstové fáze",
+          "start": "06-01",
+          "end": "06-30",
+          "offset": 0,
+          "after": "nutrition_1",
+          "min_gap_days": 21,
+          "requires": [
+            "crop_stage",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "06-01"
+            ]
+          },
+          "is_non_disruptive": false,
+          "additional_after": [
+            "sow"
+          ]
+        },
+        {
+          "id": "harvest",
+          "activity": "HARVEST",
+          "name": "Sklizeň",
+          "start": "09-20",
+          "end": "11-10",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 80,
+          "requires": [
+            "maturity",
+            "moisture",
+            "withdrawal_periods",
+            "haulage_storage"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "09-20"
+            ]
+          },
+          "is_non_disruptive": false
+        }
+      ],
+      "calendar_basis": "Broad illustrative windows, temperate Czech region; adjust to cultivar and phenology."
+    },
+    {
+      "id": "OATS",
+      "name": "Oves",
+      "family": "POACEAE",
+      "winter_crop": false,
+      "demands": {
+        "scale": "1 low - 5 high; illustrative agronomic classification",
+        "overall": 2,
+        "water": 3,
+        "nutrients": 2,
+        "labor": 2
+      },
+      "soil_requirements": {
+        "drainage": "well_drained",
+        "ph_range": [
+          6.0,
+          7.2
+        ],
+        "assessment": "Needs measured pH/texture; BPEJ alone is insufficient."
+      },
+      "recommended_rotation_break_years": 2,
+      "fertilization": {
+        "routine_mineral_n": true,
+        "dose_kg_per_ha": null,
+        "method": "Measured soil supply + previous crop/manure credits + target yield; approved nutrient budget before application. P/K and liming follow soil tests. No automatic nitrogen for legumes."
+      },
+      "stages": [
+        {
+          "id": "prepare",
+          "activity": "PREPARE",
+          "name": "Příprava půdy",
+          "start": "03-01",
+          "end": "03-10",
+          "offset": 0,
+          "after": null,
+          "min_gap_days": 0,
+          "requires": [
+            "soil_trafficable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_1",
+          "activity": "FERTILIZE",
+          "name": "Základní výživa před založením porostu",
+          "start": "03-01",
+          "end": "04-15",
+          "offset": 0,
+          "after": "prepare",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_test",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "sow",
+          "activity": "SOW",
+          "name": "Setí / sázení",
+          "start": "03-10",
+          "end": "04-15",
+          "offset": 0,
+          "after": "nutrition_1",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_temperature",
+            "seedbed_ready"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-10"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "harvest",
+          "activity": "HARVEST",
+          "name": "Sklizeň",
+          "start": "08-01",
+          "end": "08-25",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 80,
+          "requires": [
+            "maturity",
+            "moisture",
+            "withdrawal_periods",
+            "haulage_storage"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "08-01"
+            ]
+          },
+          "is_non_disruptive": false
+        }
+      ],
+      "calendar_basis": "Broad illustrative windows, temperate Czech region; adjust to cultivar and phenology."
+    },
+    {
+      "id": "SUNFLOWER",
+      "name": "Slunečnice",
+      "family": "ASTERACEAE",
+      "winter_crop": false,
+      "demands": {
+        "scale": "1 low - 5 high; illustrative agronomic classification",
+        "overall": 3,
+        "water": 3,
+        "nutrients": 3,
+        "labor": 3
+      },
+      "soil_requirements": {
+        "drainage": "well_drained",
+        "ph_range": [
+          6.0,
+          7.2
+        ],
+        "assessment": "Needs measured pH/texture; BPEJ alone is insufficient."
+      },
+      "recommended_rotation_break_years": 5,
+      "fertilization": {
+        "routine_mineral_n": true,
+        "dose_kg_per_ha": null,
+        "method": "Measured soil supply + previous crop/manure credits + target yield; approved nutrient budget before application. P/K and liming follow soil tests. No automatic nitrogen for legumes."
+      },
+      "stages": [
+        {
+          "id": "prepare",
+          "activity": "PREPARE",
+          "name": "Příprava půdy",
+          "start": "03-01",
+          "end": "04-15",
+          "offset": 0,
+          "after": null,
+          "min_gap_days": 0,
+          "requires": [
+            "soil_trafficable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "nutrition_1",
+          "activity": "FERTILIZE",
+          "name": "Základní výživa před založením porostu",
+          "start": "03-01",
+          "end": "05-15",
+          "offset": 0,
+          "after": "prepare",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_test",
+            "nutrient_budget",
+            "agronomist_approval",
+            "legal_window",
+            "weather_suitable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "sow",
+          "activity": "SOW",
+          "name": "Setí / sázení",
+          "start": "04-15",
+          "end": "05-15",
+          "offset": 0,
+          "after": "nutrition_1",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_temperature",
+            "seedbed_ready"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "04-15"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "harvest",
+          "activity": "HARVEST",
+          "name": "Sklizeň",
+          "start": "09-01",
+          "end": "10-15",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 80,
+          "requires": [
+            "maturity",
+            "moisture",
+            "withdrawal_periods",
+            "haulage_storage"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "09-01"
+            ]
+          },
+          "is_non_disruptive": false
+        }
+      ],
+      "calendar_basis": "Broad illustrative windows, temperate Czech region; adjust to cultivar and phenology."
+    },
+    {
+      "id": "SOY",
+      "name": "Sója",
+      "family": "FABACEAE",
+      "winter_crop": false,
+      "demands": {
+        "scale": "1 low - 5 high; illustrative agronomic classification",
+        "overall": 3,
+        "water": 3,
+        "nutrients": 1,
+        "labor": 3
+      },
+      "soil_requirements": {
+        "drainage": "well_drained",
+        "ph_range": [
+          6.0,
+          7.2
+        ],
+        "assessment": "Needs measured pH/texture; BPEJ alone is insufficient."
+      },
+      "recommended_rotation_break_years": 4,
+      "fertilization": {
+        "routine_mineral_n": false,
+        "dose_kg_per_ha": null,
+        "method": "Measured soil supply + previous crop/manure credits + target yield; approved nutrient budget before application. P/K and liming follow soil tests. No automatic nitrogen for legumes."
+      },
+      "stages": [
+        {
+          "id": "prepare",
+          "activity": "PREPARE",
+          "name": "Příprava půdy",
+          "start": "03-01",
+          "end": "04-25",
+          "offset": 0,
+          "after": null,
+          "min_gap_days": 0,
+          "requires": [
+            "soil_trafficable"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "03-01"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "sow",
+          "activity": "SOW",
+          "name": "Setí / sázení",
+          "start": "04-25",
+          "end": "05-20",
+          "offset": 0,
+          "after": "prepare",
+          "min_gap_days": 0,
+          "requires": [
+            "soil_temperature",
+            "seedbed_ready"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "04-25"
+            ]
+          },
+          "is_non_disruptive": false
+        },
+        {
+          "id": "harvest",
+          "activity": "HARVEST",
+          "name": "Sklizeň",
+          "start": "09-10",
+          "end": "10-20",
+          "offset": 0,
+          "after": "sow",
+          "min_gap_days": 80,
+          "requires": [
+            "maturity",
+            "moisture",
+            "withdrawal_periods",
+            "haulage_storage"
+          ],
+          "recurrence": {
+            "frequency": "YEARLY",
+            "interval": 1,
+            "month_days": [
+              "09-10"
+            ]
+          },
+          "is_non_disruptive": false
+        }
+      ],
+      "calendar_basis": "Broad illustrative windows, temperate Czech region; adjust to cultivar and phenology."
+    }
+  ]
+}

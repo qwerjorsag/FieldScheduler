@@ -1,0 +1,325 @@
+{
+  "schema_version": 1,
+  "assignments": [
+    {
+      "id": "a1cd4a2e-4352-5926-803e-84b859dedb32",
+      "location_id": "697add34-92cd-5961-a808-80345c78b3d5",
+      "crop_id": "WINTER_WHEAT",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "392380bb-2356-509a-b630-ca057b9fca42",
+      "location_id": "697add34-92cd-5961-a808-80345c78b3d5",
+      "crop_id": "PEA",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "d260326f-3e34-526e-bceb-4c420da04105",
+      "location_id": "00071747-205a-5c7e-8ab8-165ba9c95ae2",
+      "crop_id": "SPRING_BARLEY",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "76e7a599-0b3a-5a53-aa34-f1f2a314f4af",
+      "location_id": "00071747-205a-5c7e-8ab8-165ba9c95ae2",
+      "crop_id": "WINTER_RAPE",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "17e5aa44-65e3-5be8-9536-343917021456",
+      "location_id": "6c05a38d-5932-5eac-9bc4-c91b2207ac4b",
+      "crop_id": "SILAGE_MAIZE",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "6bb07b39-399e-5d48-909b-a146244f92b5",
+      "location_id": "6c05a38d-5932-5eac-9bc4-c91b2207ac4b",
+      "crop_id": "SPRING_BARLEY",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "4d03a184-a131-5212-ac94-6b5c572be41d",
+      "location_id": "8c6265f1-73d5-53f3-abc5-1c4da2c0fcbf",
+      "crop_id": "WINTER_RAPE",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "d975a3b8-9887-582f-b452-4484d0111a0b",
+      "location_id": "8c6265f1-73d5-53f3-abc5-1c4da2c0fcbf",
+      "crop_id": "WINTER_WHEAT",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "99816651-f26f-5634-b22b-2b919abbaa1d",
+      "location_id": "0147c6e8-2d9f-5dd8-92a1-4d3613166c16",
+      "crop_id": "PEA",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "7fd5cf6b-244c-5d3b-b78d-601170f5ff28",
+      "location_id": "0147c6e8-2d9f-5dd8-92a1-4d3613166c16",
+      "crop_id": "WINTER_WHEAT",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "f63e683e-7153-565d-af02-422b6969351f",
+      "location_id": "1bf06ca0-dc84-593e-8f22-c748c37c0969",
+      "crop_id": "POTATO",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "bc0ff17a-9d73-5e7a-8ca5-e922615c90a4",
+      "location_id": "1bf06ca0-dc84-593e-8f22-c748c37c0969",
+      "crop_id": "SPRING_BARLEY",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "4b38de63-ee38-5c9c-89eb-b1a1b628d396",
+      "location_id": "753c4b9d-f315-57bd-9488-f5b6d4b0f129",
+      "crop_id": "SUGAR_BEET",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "250391c7-09a3-54e3-9b86-f3bcb7aa4a19",
+      "location_id": "753c4b9d-f315-57bd-9488-f5b6d4b0f129",
+      "crop_id": "SILAGE_MAIZE",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "d764149d-127c-5b56-9f98-820b89e471b7",
+      "location_id": "b6558d52-cd79-5b55-aef1-10115fe96510",
+      "crop_id": "OATS",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "8decec53-ed0b-5eff-b6ef-79ff7836583b",
+      "location_id": "b6558d52-cd79-5b55-aef1-10115fe96510",
+      "crop_id": "PEA",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "15a5ed39-e702-5109-b0c0-5bafe19c5f5a",
+      "location_id": "30c2698b-75ad-50c4-a498-0ba775005101",
+      "crop_id": "SUNFLOWER",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "1d738880-1c89-5831-9624-2147c27540a7",
+      "location_id": "30c2698b-75ad-50c4-a498-0ba775005101",
+      "crop_id": "SPRING_BARLEY",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "8d96749e-13d4-57f8-8002-a13c8c3e5ec3",
+      "location_id": "36d8cd4e-924a-5795-af1c-2cc7b6ba3c16",
+      "crop_id": "SOY",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "2009cc74-64fb-5866-a915-f8e7e0f35f9b",
+      "location_id": "36d8cd4e-924a-5795-af1c-2cc7b6ba3c16",
+      "crop_id": "WINTER_WHEAT",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "6ca6d9f4-a9e9-5e8d-9920-bd953ccfd326",
+      "location_id": "bae28f29-7657-55e1-a75c-10025af46e0b",
+      "crop_id": "WINTER_WHEAT",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "0654f1c5-8e62-59f0-94df-7e47a14835ed",
+      "location_id": "bae28f29-7657-55e1-a75c-10025af46e0b",
+      "crop_id": "PEA",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "71fa86be-7bc8-58e1-a0d5-ab51607413a3",
+      "location_id": "5a5fc873-8357-50c2-b310-5b90545bc780",
+      "crop_id": "SPRING_BARLEY",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "eb35a581-3d21-5bef-a093-cd0c27a1ce69",
+      "location_id": "5a5fc873-8357-50c2-b310-5b90545bc780",
+      "crop_id": "WINTER_RAPE",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "2de1a54f-91c4-5028-bde4-235cba6b3b97",
+      "location_id": "651560cb-a74f-5ffb-aea2-057937334acc",
+      "crop_id": "SILAGE_MAIZE",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "394f92f0-6919-5a4b-806d-6bb25d47eaaf",
+      "location_id": "651560cb-a74f-5ffb-aea2-057937334acc",
+      "crop_id": "SPRING_BARLEY",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "60d65409-3c3d-5b21-aa32-82a3b1348ff3",
+      "location_id": "1c8dbd53-b161-5b35-af6f-30ba23e35152",
+      "crop_id": "WINTER_RAPE",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "d3d7aa6d-96a3-5731-9b42-f14526aad85e",
+      "location_id": "1c8dbd53-b161-5b35-af6f-30ba23e35152",
+      "crop_id": "WINTER_WHEAT",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "97f309d6-726f-54fc-b836-55a57fb11f3d",
+      "location_id": "02340c90-4331-5005-8f54-413d99accbad",
+      "crop_id": "PEA",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "764fc58a-431f-5fd8-943c-3e6bcd93d19c",
+      "location_id": "02340c90-4331-5005-8f54-413d99accbad",
+      "crop_id": "WINTER_WHEAT",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "aacfce8e-4b58-5187-84a8-7dee16bc3742",
+      "location_id": "a15c19dd-e81d-52a9-a347-716bf3b1f20c",
+      "crop_id": "POTATO",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "9420d07b-4e54-512b-999c-25bb4fc9f5fc",
+      "location_id": "a15c19dd-e81d-52a9-a347-716bf3b1f20c",
+      "crop_id": "SPRING_BARLEY",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "1ee0ccc5-c5ad-5854-8611-75c870b5c1c0",
+      "location_id": "b02c0c93-9173-52ba-bd86-b385929bb9fa",
+      "crop_id": "SUGAR_BEET",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "91efd762-80c7-5826-9b32-ce6f60a4f107",
+      "location_id": "b02c0c93-9173-52ba-bd86-b385929bb9fa",
+      "crop_id": "SILAGE_MAIZE",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "e0f31a14-2ab4-5c73-9e3f-46c3161905b7",
+      "location_id": "0ed3b2bc-68b7-56f7-b41b-56e8e146d831",
+      "crop_id": "OATS",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "812e015b-afd9-5f98-b378-f1ea2e3338c7",
+      "location_id": "0ed3b2bc-68b7-56f7-b41b-56e8e146d831",
+      "crop_id": "PEA",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "9c4b28bb-4775-5d47-9c05-15fe3a1916ad",
+      "location_id": "17b764e3-ab30-5875-99cb-30f58ebe2c17",
+      "crop_id": "SUNFLOWER",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "d98b457f-83b2-5b7e-a4f1-839cbae4195b",
+      "location_id": "17b764e3-ab30-5875-99cb-30f58ebe2c17",
+      "crop_id": "SPRING_BARLEY",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "cc9784b7-f927-5320-baaa-e1fc9d9513ad",
+      "location_id": "728ca2c2-ec12-560d-ae1b-8f2c1d51f76b",
+      "crop_id": "SOY",
+      "harvest_year": 2027,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    },
+    {
+      "id": "13357c13-a466-5878-9f84-0c796e883d4c",
+      "location_id": "728ca2c2-ec12-560d-ae1b-8f2c1d51f76b",
+      "crop_id": "WINTER_WHEAT",
+      "harvest_year": 2028,
+      "prior_establishment_status": "ASSUMED_ESTABLISHED_IF_SOWING_BEFORE_HORIZON",
+      "rotation_status": "ILLUSTRATIVE_REQUIRES_HISTORY_REVIEW"
+    }
+  ]
+}

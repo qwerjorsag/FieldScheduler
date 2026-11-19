@@ -1,0 +1,49 @@
+﻿operation_id,phase,operation_name,field_name,area_ha,duration_minutes,effective_ha_per_hour,setup_minutes,is_non_disruptive,worker_name,machine_name,equipment_names
+1ccb62ac-0b62-5e9f-873d-1c4e460039e6,PLOUGH,Orba Sever,Sever,8.0000,172,3.400,30,False,Jan,Traktor 1,Pluh 1
+d21e6ff0-7338-58ad-800f-7df95ac80b7e,SOW,Setí Sever,Sever,8.0000,143,4.250,30,False,Lucie,Stroj 5,Secí stroj 1
+5854cfd3-99ea-5bfe-9b67-344a5145bbbf,SPRAY,Postřik Sever,Sever,8.0000,78,10.200,30,False,Eva,Postřikovač 1,Postřikovací nádrž 1
+fa2ef39c-3c21-5074-b2cc-cb4e0f88b15e,HARVEST,Sklizeň Sever,Sever,8.0000,172,3.400,30,False,Jan,Kombajn 1,Žací lišta 1
+da616f89-b284-5797-b0a8-ce2ebb639d1c,PLOUGH,Orba Jih,Jih,10.0000,197,3.60,30,False,Martin,Traktor 2,Pluh 1
+2be4e21c-1168-50e6-8ddf-0805b42fdd03,SOW,Setí Jih,Jih,10.0000,164,4.50,30,False,Tereza,Stroj 6,Secí stroj 2
+65c19472-c118-59e2-a7fb-8061a486b9dd,SPRAY,Postřik Jih,Jih,10.0000,86,10.80,30,False,Jakub,Stroj 7,Postřikovací nádrž 2
+24a8e019-3aec-571f-b6f5-04c6dd40fb4e,HARVEST,Sklizeň Jih,Jih,10.0000,197,3.60,30,False,Eva,Stroj 9,Žací lišta 2
+f4b98427-1fd5-5999-a450-d2d87d3c50de,PLOUGH,Orba Údolí,Údolí,12.0000,220,3.800,30,False,Tomáš,Stroj 5,Pluh 1
+f2e1bd39-a47e-5eaa-b3eb-f70c3b537493,SOW,Setí Údolí,Údolí,12.0000,182,4.750,30,False,David,Stroj 11,Secí stroj 1
+47e1151e-f473-5b6d-8a14-5e6be59bc4e1,SPRAY,Postřik Údolí,Údolí,12.0000,94,11.400,30,False,Anna,Stroj 8,Postřikovací nádrž 3
+a8b204cf-e1d9-5dc1-be3a-c0146210d191,HARVEST,Sklizeň Údolí,Údolí,12.0000,220,3.800,30,False,Michal,Stroj 10,Žací lišta 3
+e4258b6a-bbee-53d1-9a9b-58c428ad4555,PLOUGH,Orba Západ,Západ,14.0000,240,4.00,30,False,Veronika,Stroj 6,Pluh 1
+b1ea21f2-fe30-589a-82d4-206abce66c6d,SOW,Setí Západ,Západ,14.0000,198,5.00,30,False,Jan,Stroj 12,Secí stroj 2
+0cc17eb6-9303-541a-bc61-6ce44dd71263,SPRAY,Postřik Západ,Západ,14.0000,100,12.00,30,False,Eva,Postřikovač 1,Postřikovací nádrž 1
+4563fc56-339c-54fb-a25c-ad67234a88ec,HARVEST,Sklizeň Západ,Západ,14.0000,240,4.00,30,False,Klára,Kombajn 1,Žací lišta 1
+f461c36b-c322-5576-8805-2ba183ba65e6,PLOUGH,Orba Východ,Východ,16.0000,313,3.400,30,False,Barbora,Stroj 11,Pluh 1
+294ef4d9-8199-5bd8-ae64-b6bde805d959,SOW,Setí Východ,Východ,16.0000,256,4.250,30,False,Martin,Traktor 1,Secí stroj 1
+bf7027ca-e506-524f-bdc5-0903e2e20e56,SPRAY,Postřik Východ,Východ,16.0000,125,10.200,30,False,Jakub,Stroj 7,Postřikovací nádrž 2
+712c4671-857c-57a3-a798-b90fb3dd74f7,HARVEST,Sklizeň Východ,Východ,16.0000,313,3.400,30,False,Pavel,Stroj 9,Žací lišta 2
+3aefcb28-bfee-5246-a73d-00f7ac00f8eb,PLOUGH,Orba Louka,Louka,8.0000,164,3.60,30,False,Petr,Stroj 12,Pluh 1
+29642a8d-ff40-5cb2-a78e-0f12218022fd,SOW,Setí Louka,Louka,8.0000,137,4.50,30,False,Tomáš,Traktor 2,Secí stroj 2
+edf059a3-7751-51d6-aabb-f5b95c892756,SPRAY,Postřik Louka,Louka,8.0000,75,10.80,30,False,Anna,Stroj 8,Postřikovací nádrž 3
+5931ffdb-3dd5-58fc-9aa6-067a1440485b,HARVEST,Sklizeň Louka,Louka,8.0000,164,3.60,30,False,Jan,Stroj 10,Žací lišta 3
+afdea189-4864-5995-8cef-c029b7be1103,PLOUGH,Orba Háj,Háj,10.0000,188,3.800,30,False,Lucie,Traktor 1,Pluh 1
+dfcc6b4a-0cda-5e8e-b5e4-f57c7141f173,SOW,Setí Háj,Háj,10.0000,157,4.750,30,False,Veronika,Stroj 5,Secí stroj 1
+7698d4eb-415d-5e09-beac-1f092bb1fe4b,SPRAY,Postřik Háj,Háj,10.0000,83,11.400,30,False,Eva,Postřikovač 1,Postřikovací nádrž 1
+92d7f044-f49f-53cf-ad8d-d6facd4cb1e0,HARVEST,Sklizeň Háj,Háj,10.0000,188,3.800,30,False,Eva,Kombajn 1,Žací lišta 1
+72a7a679-ae5d-5372-9276-060fc445362b,PLOUGH,Orba Sad,Sad,12.0000,210,4.00,30,False,Tereza,Traktor 2,Pluh 1
+a89d6436-ec93-5dbe-b464-4d22b26c7f48,SOW,Setí Sad,Sad,12.0000,174,5.00,30,False,Barbora,Stroj 6,Secí stroj 2
+266a5daf-643f-5d6e-8f86-708951f45544,SPRAY,Postřik Sad,Sad,12.0000,90,12.00,30,False,Jakub,Stroj 7,Postřikovací nádrž 2
+4e1b6fa2-29c5-57af-aaf7-ad6a144b69a8,HARVEST,Sklizeň Sad,Sad,12.0000,210,4.00,30,False,Michal,Stroj 9,Žací lišta 2
+7598c031-d568-5368-a783-11943bb75936,PLOUGH,Orba Dolina,Dolina,14.0000,278,3.400,30,False,David,Stroj 5,Pluh 1
+c5eb72bf-5bbb-5a48-bcf6-4b2e74b2d1ad,SOW,Setí Dolina,Dolina,14.0000,228,4.250,30,False,Petr,Stroj 11,Secí stroj 1
+82345430-4ccc-5e60-9fe1-00ec29c975ee,SPRAY,Postřik Dolina,Dolina,14.0000,113,10.200,30,False,Anna,Stroj 8,Postřikovací nádrž 3
+9faa390d-fe6e-5556-bef9-fd1fa0cec8e9,HARVEST,Sklizeň Dolina,Dolina,14.0000,278,3.400,30,False,Klára,Stroj 10,Žací lišta 3
+d56ce095-4c12-506d-ba6d-82fa375fa41a,PLOUGH,Orba Rovina,Rovina,16.0000,297,3.60,30,False,Jan,Stroj 6,Pluh 1
+ca59096e-ee81-5658-90cb-f6ec8a8d2ccf,SOW,Setí Rovina,Rovina,16.0000,244,4.50,30,False,Lucie,Stroj 12,Secí stroj 2
+cbe9037b-5bfa-54e4-bb3d-8ced36d67f90,SPRAY,Postřik Rovina,Rovina,16.0000,119,10.80,30,False,Eva,Postřikovač 1,Postřikovací nádrž 1
+b04e35c3-5124-5dbe-b19f-b7a6c724d5b1,HARVEST,Sklizeň Rovina,Rovina,16.0000,297,3.60,30,False,Pavel,Kombajn 1,Žací lišta 1
+fd4b6322-e2bc-51db-81fd-119708b3c54d,PLOUGH,Orba Vrchy,Vrchy,8.0000,157,3.800,30,False,Martin,Stroj 11,Pluh 1
+84974d27-5077-5363-8a11-1ad73144828e,SOW,Setí Vrchy,Vrchy,8.0000,132,4.750,30,False,Tereza,Traktor 1,Secí stroj 1
+95c32d64-36fc-5d75-9568-9c517a00a0bd,SPRAY,Postřik Vrchy,Vrchy,8.0000,73,11.400,30,False,Jakub,Stroj 7,Postřikovací nádrž 2
+df9c0d35-65f5-568a-a983-0ba239cf688d,HARVEST,Sklizeň Vrchy,Vrchy,8.0000,157,3.800,30,False,Jan,Stroj 9,Žací lišta 2
+96d49562-0a97-5c20-8984-2b45fed7cde4,PLOUGH,Orba Meze,Meze,10.0000,180,4.00,30,False,Tomáš,Stroj 12,Pluh 1
+a57b9837-9376-5349-a312-ea714a01a02b,SOW,Setí Meze,Meze,10.0000,150,5.00,30,False,David,Traktor 2,Secí stroj 2
+3ff65758-628e-5c9b-ba13-6b2de8529510,SPRAY,Postřik Meze,Meze,10.0000,80,12.00,30,False,Anna,Stroj 8,Postřikovací nádrž 3
+76aaf924-ca5a-584b-bfc8-738a648ce09a,HARVEST,Sklizeň Meze,Meze,10.0000,180,4.00,30,False,Eva,Stroj 10,Žací lišta 3

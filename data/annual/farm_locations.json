@@ -1,0 +1,820 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "locations": [
+    {
+      "id": "697add34-92cd-5961-a808-80345c78b3d5",
+      "name": "Sever",
+      "type": "FIELD",
+      "area_ha": 18,
+      "capacity_units": null,
+      "productivity_factor": 0.85,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 14.4
+        },
+        {
+          "code": "51502",
+          "area_ha": 3.6
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "00071747-205a-5c7e-8ab8-165ba9c95ae2",
+      "name": "Jih",
+      "type": "FIELD",
+      "area_ha": 22,
+      "capacity_units": null,
+      "productivity_factor": 0.9,
+      "bpej": [
+        {
+          "code": "51502",
+          "area_ha": 17.6
+        },
+        {
+          "code": "52901",
+          "area_ha": 4.4
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "6c05a38d-5932-5eac-9bc4-c91b2207ac4b",
+      "name": "Údolí",
+      "type": "FIELD",
+      "area_ha": 26,
+      "capacity_units": null,
+      "productivity_factor": 0.95,
+      "bpej": [
+        {
+          "code": "52901",
+          "area_ha": 20.8
+        },
+        {
+          "code": "51400",
+          "area_ha": 5.2
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "8c6265f1-73d5-53f3-abc5-1c4da2c0fcbf",
+      "name": "Západ",
+      "type": "FIELD",
+      "area_ha": 30,
+      "capacity_units": null,
+      "productivity_factor": 1.0,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 24.0
+        },
+        {
+          "code": "51502",
+          "area_ha": 6.0
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "0147c6e8-2d9f-5dd8-92a1-4d3613166c16",
+      "name": "Východ",
+      "type": "FIELD",
+      "area_ha": 34,
+      "capacity_units": null,
+      "productivity_factor": 0.85,
+      "bpej": [
+        {
+          "code": "51502",
+          "area_ha": 27.200000000000003
+        },
+        {
+          "code": "52901",
+          "area_ha": 6.800000000000001
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "1bf06ca0-dc84-593e-8f22-c748c37c0969",
+      "name": "Za tratí",
+      "type": "FIELD",
+      "area_ha": 38,
+      "capacity_units": null,
+      "productivity_factor": 0.9,
+      "bpej": [
+        {
+          "code": "52901",
+          "area_ha": 30.400000000000002
+        },
+        {
+          "code": "51400",
+          "area_ha": 7.6000000000000005
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "753c4b9d-f315-57bd-9488-f5b6d4b0f129",
+      "name": "Hájské pole",
+      "type": "FIELD",
+      "area_ha": 42,
+      "capacity_units": null,
+      "productivity_factor": 0.95,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 33.6
+        },
+        {
+          "code": "51502",
+          "area_ha": 8.4
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "b6558d52-cd79-5b55-aef1-10115fe96510",
+      "name": "U sadu",
+      "type": "FIELD",
+      "area_ha": 18,
+      "capacity_units": null,
+      "productivity_factor": 1.0,
+      "bpej": [
+        {
+          "code": "51502",
+          "area_ha": 14.4
+        },
+        {
+          "code": "52901",
+          "area_ha": 3.6
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "30c2698b-75ad-50c4-a498-0ba775005101",
+      "name": "Dolina",
+      "type": "FIELD",
+      "area_ha": 22,
+      "capacity_units": null,
+      "productivity_factor": 0.85,
+      "bpej": [
+        {
+          "code": "52901",
+          "area_ha": 17.6
+        },
+        {
+          "code": "51400",
+          "area_ha": 4.4
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "36d8cd4e-924a-5795-af1c-2cc7b6ba3c16",
+      "name": "Rovina",
+      "type": "FIELD",
+      "area_ha": 26,
+      "capacity_units": null,
+      "productivity_factor": 0.9,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 20.8
+        },
+        {
+          "code": "51502",
+          "area_ha": 5.2
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "bae28f29-7657-55e1-a75c-10025af46e0b",
+      "name": "Vrchy",
+      "type": "FIELD",
+      "area_ha": 30,
+      "capacity_units": null,
+      "productivity_factor": 0.95,
+      "bpej": [
+        {
+          "code": "51502",
+          "area_ha": 24.0
+        },
+        {
+          "code": "52901",
+          "area_ha": 6.0
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "5a5fc873-8357-50c2-b310-5b90545bc780",
+      "name": "Meze",
+      "type": "FIELD",
+      "area_ha": 34,
+      "capacity_units": null,
+      "productivity_factor": 1.0,
+      "bpej": [
+        {
+          "code": "52901",
+          "area_ha": 27.200000000000003
+        },
+        {
+          "code": "51400",
+          "area_ha": 6.800000000000001
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "651560cb-a74f-5ffb-aea2-057937334acc",
+      "name": "U potoka",
+      "type": "FIELD",
+      "area_ha": 38,
+      "capacity_units": null,
+      "productivity_factor": 0.85,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 30.400000000000002
+        },
+        {
+          "code": "51502",
+          "area_ha": 7.6000000000000005
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "1c8dbd53-b161-5b35-af6f-30ba23e35152",
+      "name": "Dlouhé",
+      "type": "FIELD",
+      "area_ha": 42,
+      "capacity_units": null,
+      "productivity_factor": 0.9,
+      "bpej": [
+        {
+          "code": "51502",
+          "area_ha": 33.6
+        },
+        {
+          "code": "52901",
+          "area_ha": 8.4
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "02340c90-4331-5005-8f54-413d99accbad",
+      "name": "Na kopci",
+      "type": "FIELD",
+      "area_ha": 18,
+      "capacity_units": null,
+      "productivity_factor": 0.95,
+      "bpej": [
+        {
+          "code": "52901",
+          "area_ha": 14.4
+        },
+        {
+          "code": "51400",
+          "area_ha": 3.6
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "a15c19dd-e81d-52a9-a347-716bf3b1f20c",
+      "name": "Za dvorem",
+      "type": "FIELD",
+      "area_ha": 22,
+      "capacity_units": null,
+      "productivity_factor": 1.0,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 17.6
+        },
+        {
+          "code": "51502",
+          "area_ha": 4.4
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "b02c0c93-9173-52ba-bd86-b385929bb9fa",
+      "name": "Horní lán",
+      "type": "FIELD",
+      "area_ha": 26,
+      "capacity_units": null,
+      "productivity_factor": 0.85,
+      "bpej": [
+        {
+          "code": "51502",
+          "area_ha": 20.8
+        },
+        {
+          "code": "52901",
+          "area_ha": 5.2
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "0ed3b2bc-68b7-56f7-b41b-56e8e146d831",
+      "name": "Dolní lán",
+      "type": "FIELD",
+      "area_ha": 30,
+      "capacity_units": null,
+      "productivity_factor": 0.9,
+      "bpej": [
+        {
+          "code": "52901",
+          "area_ha": 24.0
+        },
+        {
+          "code": "51400",
+          "area_ha": 6.0
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "17b764e3-ab30-5875-99cb-30f58ebe2c17",
+      "name": "U lesa",
+      "type": "FIELD",
+      "area_ha": 34,
+      "capacity_units": null,
+      "productivity_factor": 0.95,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 27.200000000000003
+        },
+        {
+          "code": "51502",
+          "area_ha": 6.800000000000001
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "728ca2c2-ec12-560d-ae1b-8f2c1d51f76b",
+      "name": "Pod cestou",
+      "type": "FIELD",
+      "area_ha": 38,
+      "capacity_units": null,
+      "productivity_factor": 1.0,
+      "bpej": [
+        {
+          "code": "51502",
+          "area_ha": 30.400000000000002
+        },
+        {
+          "code": "52901",
+          "area_ha": 7.6000000000000005
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "04749e05-6a27-5e2e-ae64-efaad7dc7c2d",
+      "name": "Sad 1",
+      "type": "ORCHARD",
+      "area_ha": 6,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 6
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "e9984ee1-e4c7-54f2-a6d6-d88cbce1d8ed",
+      "name": "Sad 2",
+      "type": "ORCHARD",
+      "area_ha": 6,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 6
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "af2bad42-9df9-5c6c-b9f0-08d8456b0a32",
+      "name": "Sad 3",
+      "type": "ORCHARD",
+      "area_ha": 6,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 6
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "3d07625c-ca3b-5e24-963d-0121e6344597",
+      "name": "Sad 4",
+      "type": "ORCHARD",
+      "area_ha": 6,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 6
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "ce20044d-26db-5051-b7b3-a34b7c56c2a2",
+      "name": "Louka 1",
+      "type": "MEADOW",
+      "area_ha": 12,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 12
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "8bc56673-b720-57bd-bcc1-ff6df61f42c7",
+      "name": "Louka 2",
+      "type": "MEADOW",
+      "area_ha": 12,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 12
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "89a5cc5f-ff59-5e00-8497-bffdaf4a2f82",
+      "name": "Louka 3",
+      "type": "MEADOW",
+      "area_ha": 12,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 12
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "5c22fadd-47d0-5594-9c6d-1d2bfce7a1bd",
+      "name": "Louka 4",
+      "type": "MEADOW",
+      "area_ha": 12,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 12
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "0b4d29c1-2864-5b96-9230-e1cf3c55b10e",
+      "name": "Louka 5",
+      "type": "MEADOW",
+      "area_ha": 12,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 12
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "958611cc-1f53-5e84-bf09-474d5f093394",
+      "name": "Pastvina 1",
+      "type": "PASTURE",
+      "area_ha": 10,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 10
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "2902230a-df94-5f06-8354-fa5a867dedf4",
+      "name": "Pastvina 2",
+      "type": "PASTURE",
+      "area_ha": 10,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 10
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "9e401e70-705d-5b1e-9755-551870f396b1",
+      "name": "Pastvina 3",
+      "type": "PASTURE",
+      "area_ha": 10,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 10
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "6e2cdadc-24ee-550a-8ffa-e766cabba0a0",
+      "name": "Rybník 1",
+      "type": "POND",
+      "area_ha": 4,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "86b8c1b2-ad0c-5c77-b217-e128d5fcae83",
+      "name": "Rybník 2",
+      "type": "POND",
+      "area_ha": 4,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "c3afa926-5b3d-58fc-8f82-629fc336b5bf",
+      "name": "Háj 1",
+      "type": "GROVE",
+      "area_ha": 3,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "3defa139-ce51-59da-9e70-642da15d268a",
+      "name": "Háj 2",
+      "type": "GROVE",
+      "area_ha": 3,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "d4725084-0c8f-55be-b847-8fba98163383",
+      "name": "Kravín 1",
+      "type": "CATTLE",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": 60,
+      "animal_count": 48,
+      "animal_groups": [{"id": "lactating", "name": "Laktující krávy", "count": 32}, {"id": "dry", "name": "Suchostojné krávy", "count": 10}, {"id": "calves", "name": "Telata", "count": 6}],
+      "animal_count_status": "SYNTHETIC_EDITABLE",
+      "milking_mode": "ROBOTIC",
+      "milking_staffing": {"required_staff_count": 1, "required_skill": "MILKING", "note": "Technik dohlíží na robotickou dojicí technologii."},
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "16706860-f1cb-54c9-9867-13d029325f33",
+      "name": "Kravín 2",
+      "type": "CATTLE",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": 60,
+      "animal_count": 52,
+      "animal_groups": [{"id": "lactating", "name": "Laktující krávy", "count": 36}, {"id": "dry", "name": "Suchostojné krávy", "count": 10}, {"id": "calves", "name": "Telata", "count": 6}],
+      "animal_count_status": "SYNTHETIC_EDITABLE",
+      "milking_mode": "MANUAL",
+      "milking_staffing": {"required_staff_count": 2, "required_skill": "MILKING", "note": "Ruční dojení vyžaduje dva proškolené pracovníky."},
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "0e45fd37-57d3-58eb-b6f2-255f197f504a",
+      "name": "Vepřín 1",
+      "type": "PIG",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": 150,
+      "animal_count": 132,
+      "animal_groups": [{"id": "sows", "name": "Prasnice", "count": 24}, {"id": "growers", "name": "Výkrm", "count": 88}, {"id": "piglets", "name": "Selata", "count": 20}],
+      "animal_count_status": "SYNTHETIC_EDITABLE",
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "8565f855-99d0-5388-bd98-57ffa309962e",
+      "name": "Vepřín 2",
+      "type": "PIG",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": 150,
+      "animal_count": 141,
+      "animal_groups": [{"id": "sows", "name": "Prasnice", "count": 26}, {"id": "growers", "name": "Výkrm", "count": 95}, {"id": "piglets", "name": "Selata", "count": 20}],
+      "animal_count_status": "SYNTHETIC_EDITABLE",
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "4383c9cb-4243-5d77-bc85-8de4940d8d2b",
+      "name": "Drůbežárna 1",
+      "type": "POULTRY",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": 300,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "48aa2a36-2b58-5719-882c-3f5864f27a0c",
+      "name": "Drůbežárna 2",
+      "type": "POULTRY",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": 300,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "caae9d4a-4048-592c-bce8-2d2092ac596e",
+      "name": "Dojírna 1",
+      "type": "MILKING",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": 120,
+      "animal_count": 84,
+      "animal_groups": [{"id": "milking_cows", "name": "Laktující krávy k dojení", "count": 84}],
+      "animal_count_status": "SYNTHETIC_LINKED_TO_CATTLE",
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "f2fb89ad-5931-5c90-9420-1ecfc3501be0",
+      "name": "Ovčín 1",
+      "type": "SHEEP",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": 50,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "d3bd9ec0-692a-57ea-92de-83087e690fb6",
+      "name": "Kozín 1",
+      "type": "GOAT",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": 40,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "9e5a0efb-b2bd-535b-ac96-09fffc5ff5db",
+      "name": "Stáj koní 1",
+      "type": "STABLE",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": 12,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "7ced7fc0-3a14-549b-aa7e-73e5185ce547",
+      "name": "Vinice 1",
+      "type": "VINEYARD",
+      "area_ha": 5,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [
+        {
+          "code": "51400",
+          "area_ha": 5
+        }
+      ],
+      "bpej_assignment_status": "SYNTHETIC_NOT_VERIFIED_AGAINST_PARCEL",
+      "soil_test": null
+    },
+    {
+      "id": "dcb5e361-e183-5c6d-9e09-8bf486a1d3e9",
+      "name": "Skleník 1",
+      "type": "GREENHOUSE",
+      "area_ha": 1,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "a8ab0497-6a3b-5bc5-b7bd-db3813520e15",
+      "name": "Obilní sklad 1",
+      "type": "STORAGE",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    },
+    {
+      "id": "2827425b-5d81-57e3-b0ec-0859d06f169e",
+      "name": "Dílna 1",
+      "type": "WORKSHOP",
+      "area_ha": null,
+      "productivity_factor": 0.9,
+      "capacity_units": null,
+      "bpej": [],
+      "bpej_assignment_status": "NOT_APPLICABLE",
+      "soil_test": null
+    }
+  ]
+}

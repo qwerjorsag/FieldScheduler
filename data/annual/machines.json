@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "machines": [
+    {
+      "id": "8042bdb5-95a6-5ab0-8d29-abba08c26f32",
+      "operating_cost_czk_per_hour": 1100,
+      "name": "PREPARE souprava 1",
+      "operation_types": [
+        "PREPARE"
+      ],
+      "ha_per_hour": 5,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "76601932-bed0-54de-a497-92d070cb7ab6",
+      "operating_cost_czk_per_hour": 1100,
+      "name": "PREPARE souprava 2",
+      "operation_types": [
+        "PREPARE"
+      ],
+      "ha_per_hour": 5,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "e15da0ab-b3a1-5cda-9a94-1a16e857d513",
+      "operating_cost_czk_per_hour": 1100,
+      "name": "PREPARE souprava 3",
+      "operation_types": [
+        "PREPARE"
+      ],
+      "ha_per_hour": 5,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "7f4ac427-efd9-5517-8e12-cd494e455610",
+      "operating_cost_czk_per_hour": 1100,
+      "name": "PREPARE souprava 4",
+      "operation_types": [
+        "PREPARE"
+      ],
+      "ha_per_hour": 5,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "5679181a-6840-5692-b21d-843c73e2b548",
+      "operating_cost_czk_per_hour": 1250,
+      "name": "SOW souprava 1",
+      "operation_types": [
+        "SOW"
+      ],
+      "ha_per_hour": 6,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "04019562-41ff-5f99-8c92-d59b09a429fa",
+      "operating_cost_czk_per_hour": 1250,
+      "name": "SOW souprava 2",
+      "operation_types": [
+        "SOW"
+      ],
+      "ha_per_hour": 6,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "dcf65e2b-beb8-5345-b185-0321c36fdd2b",
+      "operating_cost_czk_per_hour": 1250,
+      "name": "SOW souprava 3",
+      "operation_types": [
+        "SOW"
+      ],
+      "ha_per_hour": 6,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "1f8f342b-11bb-5c50-8773-60e886da1ee6",
+      "operating_cost_czk_per_hour": 1250,
+      "name": "SOW souprava 4",
+      "operation_types": [
+        "SOW"
+      ],
+      "ha_per_hour": 6,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "35b57fb4-1b30-5639-b16e-f9c08612fc9d",
+      "operating_cost_czk_per_hour": 2200,
+      "name": "HARVEST souprava 1",
+      "operation_types": [
+        "HARVEST"
+      ],
+      "ha_per_hour": 5,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "a347e54b-9603-56db-8686-2033e9ecc08f",
+      "operating_cost_czk_per_hour": 2200,
+      "name": "HARVEST souprava 2",
+      "operation_types": [
+        "HARVEST"
+      ],
+      "ha_per_hour": 5,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "34a932d3-fee0-5efa-a4f8-129ac2d49685",
+      "operating_cost_czk_per_hour": 2200,
+      "name": "HARVEST souprava 3",
+      "operation_types": [
+        "HARVEST"
+      ],
+      "ha_per_hour": 5,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "0bc5237e-b3e1-52ef-9242-95e126774bcb",
+      "operating_cost_czk_per_hour": 2200,
+      "name": "HARVEST souprava 4",
+      "operation_types": [
+        "HARVEST"
+      ],
+      "ha_per_hour": 5,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "5f2071ca-1042-5461-b249-38b95f16198b",
+      "operating_cost_czk_per_hour": 950,
+      "name": "FERTILIZE souprava 1",
+      "operation_types": [
+        "FERTILIZE"
+      ],
+      "ha_per_hour": 12,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "7bf4c1e0-19e8-5df5-bb2a-147d3c13d93a",
+      "operating_cost_czk_per_hour": 950,
+      "name": "FERTILIZE souprava 2",
+      "operation_types": [
+        "FERTILIZE"
+      ],
+      "ha_per_hour": 12,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    },
+    {
+      "id": "42fc0edc-a177-52d9-8463-0735503b0aef",
+      "operating_cost_czk_per_hour": 950,
+      "name": "FERTILIZE souprava 3",
+      "operation_types": [
+        "FERTILIZE"
+      ],
+      "ha_per_hour": 12,
+      "setup_minutes": 30,
+      "is_non_disruptive": false,
+      "synthetic": true
+    }
+  ]
+}

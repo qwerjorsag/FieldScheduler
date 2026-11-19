@@ -1,0 +1,10 @@
+{
+  "schema_version": "fieldscheduler-farm-policy/v1",
+  "day_start_hour": 4,
+  "quiet_start_hour": 22,
+  "day_end_hour": 24,
+  "max_daily_minutes": 720,
+  "field_switch_penalty_minutes": 240,
+  "field_switch_buffer_minutes": 30,
+  "notes": "Policy for fixture engine; field switch buffer is not a route/travel certificate. Weekly limits and minimum rest are on each worker."
+}

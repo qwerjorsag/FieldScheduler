@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "code": "51400",
+      "climate_region": 5,
+      "main_soil_unit": "14",
+      "slope_exposure_code": "0",
+      "stoniness_depth_code": "0",
+      "productivity_points": 70,
+      "protection_class": "I",
+      "source_url": "https://bpej.vumop.cz/51400",
+      "verified_on": "2026-11-19"
+    },
+    {
+      "code": "51502",
+      "climate_region": 5,
+      "main_soil_unit": "15",
+      "slope_exposure_code": "0",
+      "stoniness_depth_code": "2",
+      "productivity_points": 60,
+      "protection_class": "II",
+      "source_url": "https://bpej.vumop.cz/51502",
+      "verified_on": "2026-11-19"
+    },
+    {
+      "code": "52901",
+      "climate_region": 5,
+      "main_soil_unit": "29",
+      "slope_exposure_code": "0",
+      "stoniness_depth_code": "1",
+      "productivity_points": 51,
+      "protection_class": "II",
+      "source_url": "https://bpej.vumop.cz/52901",
+      "verified_on": "2026-11-19"
+    }
+  ],
+  "note": "Real catalog codes; assignment to synthetic locations is illustrative. Protection class is not a linear productivity score."
+}

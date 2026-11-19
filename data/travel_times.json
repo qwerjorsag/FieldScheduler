@@ -1,0 +1,126 @@
+{
+  "schema_version": "fieldscheduler-travel-times-sample/v2",
+  "unit": "minutes",
+  "travel_times": [
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "9e757f9e-96cf-5d62-ac20-ed5c848f5ab5",
+      "duration_minutes": 25
+    },
+    {
+      "origin": "9e757f9e-96cf-5d62-ac20-ed5c848f5ab5",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 30
+    },
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "201490f8-34e1-5ad6-b0e8-f33352ccdf10",
+      "duration_minutes": 30
+    },
+    {
+      "origin": "201490f8-34e1-5ad6-b0e8-f33352ccdf10",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 34
+    },
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "1abe990f-6734-55c5-9a0b-300f24237757",
+      "duration_minutes": 35
+    },
+    {
+      "origin": "1abe990f-6734-55c5-9a0b-300f24237757",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 38
+    },
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "4dba504f-644f-59b8-af59-24ed10912dc3",
+      "duration_minutes": 40
+    },
+    {
+      "origin": "4dba504f-644f-59b8-af59-24ed10912dc3",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 42
+    },
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "d08dc8d0-6c5a-56fd-b609-6bffbad3fd47",
+      "duration_minutes": 45
+    },
+    {
+      "origin": "d08dc8d0-6c5a-56fd-b609-6bffbad3fd47",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 46
+    },
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "e8ddd743-8286-53ac-8f89-d0bdcbd721bb",
+      "duration_minutes": 50
+    },
+    {
+      "origin": "e8ddd743-8286-53ac-8f89-d0bdcbd721bb",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 50
+    },
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "5aebede4-319f-593c-a918-ae01c38aa953",
+      "duration_minutes": 55
+    },
+    {
+      "origin": "5aebede4-319f-593c-a918-ae01c38aa953",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 54
+    },
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "b5118a51-e145-5620-84b8-cc796f5ec3f4",
+      "duration_minutes": 60
+    },
+    {
+      "origin": "b5118a51-e145-5620-84b8-cc796f5ec3f4",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 58
+    },
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "f79e3584-99e9-54bf-81b8-e8fbe5a0a065",
+      "duration_minutes": 65
+    },
+    {
+      "origin": "f79e3584-99e9-54bf-81b8-e8fbe5a0a065",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 62
+    },
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "509e5365-dcfc-54a2-a434-12c65110da41",
+      "duration_minutes": 70
+    },
+    {
+      "origin": "509e5365-dcfc-54a2-a434-12c65110da41",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 66
+    },
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "81d3f7e4-98ed-5d45-8bf0-0902a1889e6d",
+      "duration_minutes": 75
+    },
+    {
+      "origin": "81d3f7e4-98ed-5d45-8bf0-0902a1889e6d",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 70
+    },
+    {
+      "origin": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "destination": "08101b61-b595-53b9-aaef-dfa5114d2076",
+      "duration_minutes": 80
+    },
+    {
+      "origin": "08101b61-b595-53b9-aaef-dfa5114d2076",
+      "destination": "550f42d8-a92f-5704-93b0-a4ea4b0f65bf",
+      "duration_minutes": 74
+    }
+  ]
+}

@@ -1,0 +1,965 @@
+{
+  "schema_version": "fieldscheduler-sample-input/v3",
+  "sample_only": true,
+  "workers_file": "workers.json",
+  "fields_file": "fields.json",
+  "locations_file": "locations.json",
+  "resources_file": "resources.json",
+  "travel_times_file": "travel_times.json",
+  "operation_rules_file": "operation_rules.json",
+  "operations": [
+    {
+      "id": "1ccb62ac-0b62-5e9f-873d-1c4e460039e6",
+      "name": "Orba Sever",
+      "operation_type": "PLOUGH",
+      "field_id": "35ecc393-f520-508c-b432-cc2b598bcbb7",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "c17d400f-f8ad-55fc-b0b6-023db16eb0f7",
+      "machine_id": "664743b3-01c5-5391-bc4d-7cbeac2eeb51",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 0,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "d21e6ff0-7338-58ad-800f-7df95ac80b7e",
+      "name": "Setí Sever",
+      "operation_type": "SOW",
+      "field_id": "35ecc393-f520-508c-b432-cc2b598bcbb7",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "ac4bcd52-96b9-5c84-bc78-5c6ba72d781b",
+      "machine_id": "f7d8c060-6ebb-5c17-bdef-ca8a89d86e5f",
+      "equipment_ids": [
+        "3c824950-d102-5828-91bd-b86b5754444c"
+      ],
+      "phase": "SOW",
+      "field_index": 0,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "5854cfd3-99ea-5bfe-9b67-344a5145bbbf",
+      "name": "Postřik Sever",
+      "operation_type": "SPRAY",
+      "field_id": "35ecc393-f520-508c-b432-cc2b598bcbb7",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "cb47bd55-d47b-54d0-a1e3-b50b320ec5d6",
+      "machine_id": "ad4b3d55-3023-52a5-b03b-907e10f17107",
+      "equipment_ids": [
+        "e72b433a-47de-5e60-8e62-15c0dca3ec15"
+      ],
+      "phase": "SPRAY",
+      "field_index": 0,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "fa2ef39c-3c21-5074-b2cc-cb4e0f88b15e",
+      "name": "Sklizeň Sever",
+      "operation_type": "HARVEST",
+      "field_id": "35ecc393-f520-508c-b432-cc2b598bcbb7",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "c17d400f-f8ad-55fc-b0b6-023db16eb0f7",
+      "machine_id": "90c06ba3-5c00-5765-9812-adfc21df750c",
+      "equipment_ids": [
+        "01082a03-3ac8-55cf-a69b-166a21d73f84"
+      ],
+      "phase": "HARVEST",
+      "field_index": 0,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "da616f89-b284-5797-b0a8-ce2ebb639d1c",
+      "name": "Orba Jih",
+      "operation_type": "PLOUGH",
+      "field_id": "e867d396-6640-5f1b-b80c-19f9adfe7532",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "27a319fd-30af-5d82-9a86-9c92c5c6a27d",
+      "machine_id": "abe390fd-bb06-5d62-82cc-a66b5793bf94",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 1,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "2be4e21c-1168-50e6-8ddf-0805b42fdd03",
+      "name": "Setí Jih",
+      "operation_type": "SOW",
+      "field_id": "e867d396-6640-5f1b-b80c-19f9adfe7532",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "b2f21c05-d1a3-532e-bf0f-c359c855ef23",
+      "machine_id": "eb7cb0a1-7e12-5b61-8c62-c4352ab3e314",
+      "equipment_ids": [
+        "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93"
+      ],
+      "phase": "SOW",
+      "field_index": 1,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "65c19472-c118-59e2-a7fb-8061a486b9dd",
+      "name": "Postřik Jih",
+      "operation_type": "SPRAY",
+      "field_id": "e867d396-6640-5f1b-b80c-19f9adfe7532",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "9de9ff08-fa2c-5377-9357-a744e34ed541",
+      "machine_id": "6117d2ec-8b32-5b51-aca7-793ba416506b",
+      "equipment_ids": [
+        "ed2f22bc-e7c6-54a9-83fb-2dba032390a1"
+      ],
+      "phase": "SPRAY",
+      "field_index": 1,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "24a8e019-3aec-571f-b6f5-04c6dd40fb4e",
+      "name": "Sklizeň Jih",
+      "operation_type": "HARVEST",
+      "field_id": "e867d396-6640-5f1b-b80c-19f9adfe7532",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "cb47bd55-d47b-54d0-a1e3-b50b320ec5d6",
+      "machine_id": "32fe06e8-14c4-5ba0-82e6-b9459ad6f1a5",
+      "equipment_ids": [
+        "7626597f-cb64-568a-8e16-71a6c5acb7de"
+      ],
+      "phase": "HARVEST",
+      "field_index": 1,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "f4b98427-1fd5-5999-a450-d2d87d3c50de",
+      "name": "Orba Údolí",
+      "operation_type": "PLOUGH",
+      "field_id": "c55b1b62-cffe-5f91-8f9e-f55259223704",
+      "area_ha": "12.0000",
+      "mandatory": true,
+      "worker_id": "2a6fd470-d5e2-5434-8226-92ea04356ae1",
+      "machine_id": "f7d8c060-6ebb-5c17-bdef-ca8a89d86e5f",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 2,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "f2e1bd39-a47e-5eaa-b3eb-f70c3b537493",
+      "name": "Setí Údolí",
+      "operation_type": "SOW",
+      "field_id": "c55b1b62-cffe-5f91-8f9e-f55259223704",
+      "area_ha": "12.0000",
+      "mandatory": true,
+      "worker_id": "8860d75c-d0b3-533e-a4a4-26f8d13d4f42",
+      "machine_id": "b28357a4-3d4e-5606-b38c-d2567ee5677e",
+      "equipment_ids": [
+        "3c824950-d102-5828-91bd-b86b5754444c"
+      ],
+      "phase": "SOW",
+      "field_index": 2,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "47e1151e-f473-5b6d-8a14-5e6be59bc4e1",
+      "name": "Postřik Údolí",
+      "operation_type": "SPRAY",
+      "field_id": "c55b1b62-cffe-5f91-8f9e-f55259223704",
+      "area_ha": "12.0000",
+      "mandatory": true,
+      "worker_id": "34067ad2-491c-54a8-bc67-502899e06e12",
+      "machine_id": "ac144e69-97ea-5ce5-8eb1-05f0649bb913",
+      "equipment_ids": [
+        "3a650798-7e96-5ffd-bb2f-243b5f750778"
+      ],
+      "phase": "SPRAY",
+      "field_index": 2,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "a8b204cf-e1d9-5dc1-be3a-c0146210d191",
+      "name": "Sklizeň Údolí",
+      "operation_type": "HARVEST",
+      "field_id": "c55b1b62-cffe-5f91-8f9e-f55259223704",
+      "area_ha": "12.0000",
+      "mandatory": true,
+      "worker_id": "08bae86b-925f-52c1-a04c-239ea0eb4c7d",
+      "machine_id": "6a0ca78e-4d8e-57b5-8cdd-459cb5139c08",
+      "equipment_ids": [
+        "09bd9cc9-a927-57cf-ba00-f5f52f2a25d6"
+      ],
+      "phase": "HARVEST",
+      "field_index": 2,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "e4258b6a-bbee-53d1-9a9b-58c428ad4555",
+      "name": "Orba Západ",
+      "operation_type": "PLOUGH",
+      "field_id": "db4a1702-0586-5740-80dd-89b5804e284c",
+      "area_ha": "14.0000",
+      "mandatory": true,
+      "worker_id": "55ebbcaa-a812-5246-b82e-836a8bbf9348",
+      "machine_id": "eb7cb0a1-7e12-5b61-8c62-c4352ab3e314",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 3,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "b1ea21f2-fe30-589a-82d4-206abce66c6d",
+      "name": "Setí Západ",
+      "operation_type": "SOW",
+      "field_id": "db4a1702-0586-5740-80dd-89b5804e284c",
+      "area_ha": "14.0000",
+      "mandatory": true,
+      "worker_id": "c17d400f-f8ad-55fc-b0b6-023db16eb0f7",
+      "machine_id": "37e73cb2-d42b-5ee6-b1bf-aaf1d52c18f3",
+      "equipment_ids": [
+        "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93"
+      ],
+      "phase": "SOW",
+      "field_index": 3,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "0cc17eb6-9303-541a-bc61-6ce44dd71263",
+      "name": "Postřik Západ",
+      "operation_type": "SPRAY",
+      "field_id": "db4a1702-0586-5740-80dd-89b5804e284c",
+      "area_ha": "14.0000",
+      "mandatory": true,
+      "worker_id": "cb47bd55-d47b-54d0-a1e3-b50b320ec5d6",
+      "machine_id": "ad4b3d55-3023-52a5-b03b-907e10f17107",
+      "equipment_ids": [
+        "e72b433a-47de-5e60-8e62-15c0dca3ec15"
+      ],
+      "phase": "SPRAY",
+      "field_index": 3,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "4563fc56-339c-54fb-a25c-ad67234a88ec",
+      "name": "Sklizeň Západ",
+      "operation_type": "HARVEST",
+      "field_id": "db4a1702-0586-5740-80dd-89b5804e284c",
+      "area_ha": "14.0000",
+      "mandatory": true,
+      "worker_id": "9a311d7e-78cb-5df5-82ea-0b1b582c5d6a",
+      "machine_id": "90c06ba3-5c00-5765-9812-adfc21df750c",
+      "equipment_ids": [
+        "01082a03-3ac8-55cf-a69b-166a21d73f84"
+      ],
+      "phase": "HARVEST",
+      "field_index": 3,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "f461c36b-c322-5576-8805-2ba183ba65e6",
+      "name": "Orba Východ",
+      "operation_type": "PLOUGH",
+      "field_id": "489244f3-1090-57fb-b9a0-5582ec2c4909",
+      "area_ha": "16.0000",
+      "mandatory": true,
+      "worker_id": "50a9ff9e-b62a-5fd8-b559-69bc2811e4d2",
+      "machine_id": "b28357a4-3d4e-5606-b38c-d2567ee5677e",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 4,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "294ef4d9-8199-5bd8-ae64-b6bde805d959",
+      "name": "Setí Východ",
+      "operation_type": "SOW",
+      "field_id": "489244f3-1090-57fb-b9a0-5582ec2c4909",
+      "area_ha": "16.0000",
+      "mandatory": true,
+      "worker_id": "27a319fd-30af-5d82-9a86-9c92c5c6a27d",
+      "machine_id": "664743b3-01c5-5391-bc4d-7cbeac2eeb51",
+      "equipment_ids": [
+        "3c824950-d102-5828-91bd-b86b5754444c"
+      ],
+      "phase": "SOW",
+      "field_index": 4,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "bf7027ca-e506-524f-bdc5-0903e2e20e56",
+      "name": "Postřik Východ",
+      "operation_type": "SPRAY",
+      "field_id": "489244f3-1090-57fb-b9a0-5582ec2c4909",
+      "area_ha": "16.0000",
+      "mandatory": true,
+      "worker_id": "9de9ff08-fa2c-5377-9357-a744e34ed541",
+      "machine_id": "6117d2ec-8b32-5b51-aca7-793ba416506b",
+      "equipment_ids": [
+        "ed2f22bc-e7c6-54a9-83fb-2dba032390a1"
+      ],
+      "phase": "SPRAY",
+      "field_index": 4,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "712c4671-857c-57a3-a798-b90fb3dd74f7",
+      "name": "Sklizeň Východ",
+      "operation_type": "HARVEST",
+      "field_id": "489244f3-1090-57fb-b9a0-5582ec2c4909",
+      "area_ha": "16.0000",
+      "mandatory": true,
+      "worker_id": "8297f9ab-5ff3-5f43-97a0-23c8c9eddc43",
+      "machine_id": "32fe06e8-14c4-5ba0-82e6-b9459ad6f1a5",
+      "equipment_ids": [
+        "7626597f-cb64-568a-8e16-71a6c5acb7de"
+      ],
+      "phase": "HARVEST",
+      "field_index": 4,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "3aefcb28-bfee-5246-a73d-00f7ac00f8eb",
+      "name": "Orba Louka",
+      "operation_type": "PLOUGH",
+      "field_id": "1081637c-c539-57b7-8238-437f61c11ff1",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "e50bcfe1-91e4-5fb1-96c9-8c22b0d30fd8",
+      "machine_id": "37e73cb2-d42b-5ee6-b1bf-aaf1d52c18f3",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 5,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "29642a8d-ff40-5cb2-a78e-0f12218022fd",
+      "name": "Setí Louka",
+      "operation_type": "SOW",
+      "field_id": "1081637c-c539-57b7-8238-437f61c11ff1",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "2a6fd470-d5e2-5434-8226-92ea04356ae1",
+      "machine_id": "abe390fd-bb06-5d62-82cc-a66b5793bf94",
+      "equipment_ids": [
+        "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93"
+      ],
+      "phase": "SOW",
+      "field_index": 5,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "edf059a3-7751-51d6-aabb-f5b95c892756",
+      "name": "Postřik Louka",
+      "operation_type": "SPRAY",
+      "field_id": "1081637c-c539-57b7-8238-437f61c11ff1",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "34067ad2-491c-54a8-bc67-502899e06e12",
+      "machine_id": "ac144e69-97ea-5ce5-8eb1-05f0649bb913",
+      "equipment_ids": [
+        "3a650798-7e96-5ffd-bb2f-243b5f750778"
+      ],
+      "phase": "SPRAY",
+      "field_index": 5,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "5931ffdb-3dd5-58fc-9aa6-067a1440485b",
+      "name": "Sklizeň Louka",
+      "operation_type": "HARVEST",
+      "field_id": "1081637c-c539-57b7-8238-437f61c11ff1",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "c17d400f-f8ad-55fc-b0b6-023db16eb0f7",
+      "machine_id": "6a0ca78e-4d8e-57b5-8cdd-459cb5139c08",
+      "equipment_ids": [
+        "09bd9cc9-a927-57cf-ba00-f5f52f2a25d6"
+      ],
+      "phase": "HARVEST",
+      "field_index": 5,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "afdea189-4864-5995-8cef-c029b7be1103",
+      "name": "Orba Háj",
+      "operation_type": "PLOUGH",
+      "field_id": "7bd3f87d-9148-5eb7-a12b-4e6cfca10114",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "ac4bcd52-96b9-5c84-bc78-5c6ba72d781b",
+      "machine_id": "664743b3-01c5-5391-bc4d-7cbeac2eeb51",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 6,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "dfcc6b4a-0cda-5e8e-b5e4-f57c7141f173",
+      "name": "Setí Háj",
+      "operation_type": "SOW",
+      "field_id": "7bd3f87d-9148-5eb7-a12b-4e6cfca10114",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "55ebbcaa-a812-5246-b82e-836a8bbf9348",
+      "machine_id": "f7d8c060-6ebb-5c17-bdef-ca8a89d86e5f",
+      "equipment_ids": [
+        "3c824950-d102-5828-91bd-b86b5754444c"
+      ],
+      "phase": "SOW",
+      "field_index": 6,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "7698d4eb-415d-5e09-beac-1f092bb1fe4b",
+      "name": "Postřik Háj",
+      "operation_type": "SPRAY",
+      "field_id": "7bd3f87d-9148-5eb7-a12b-4e6cfca10114",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "cb47bd55-d47b-54d0-a1e3-b50b320ec5d6",
+      "machine_id": "ad4b3d55-3023-52a5-b03b-907e10f17107",
+      "equipment_ids": [
+        "e72b433a-47de-5e60-8e62-15c0dca3ec15"
+      ],
+      "phase": "SPRAY",
+      "field_index": 6,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "92d7f044-f49f-53cf-ad8d-d6facd4cb1e0",
+      "name": "Sklizeň Háj",
+      "operation_type": "HARVEST",
+      "field_id": "7bd3f87d-9148-5eb7-a12b-4e6cfca10114",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "cb47bd55-d47b-54d0-a1e3-b50b320ec5d6",
+      "machine_id": "90c06ba3-5c00-5765-9812-adfc21df750c",
+      "equipment_ids": [
+        "01082a03-3ac8-55cf-a69b-166a21d73f84"
+      ],
+      "phase": "HARVEST",
+      "field_index": 6,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "72a7a679-ae5d-5372-9276-060fc445362b",
+      "name": "Orba Sad",
+      "operation_type": "PLOUGH",
+      "field_id": "633a6763-b659-5a6e-bb01-7485d8688ec4",
+      "area_ha": "12.0000",
+      "mandatory": true,
+      "worker_id": "b2f21c05-d1a3-532e-bf0f-c359c855ef23",
+      "machine_id": "abe390fd-bb06-5d62-82cc-a66b5793bf94",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 7,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "a89d6436-ec93-5dbe-b464-4d22b26c7f48",
+      "name": "Setí Sad",
+      "operation_type": "SOW",
+      "field_id": "633a6763-b659-5a6e-bb01-7485d8688ec4",
+      "area_ha": "12.0000",
+      "mandatory": true,
+      "worker_id": "50a9ff9e-b62a-5fd8-b559-69bc2811e4d2",
+      "machine_id": "eb7cb0a1-7e12-5b61-8c62-c4352ab3e314",
+      "equipment_ids": [
+        "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93"
+      ],
+      "phase": "SOW",
+      "field_index": 7,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "266a5daf-643f-5d6e-8f86-708951f45544",
+      "name": "Postřik Sad",
+      "operation_type": "SPRAY",
+      "field_id": "633a6763-b659-5a6e-bb01-7485d8688ec4",
+      "area_ha": "12.0000",
+      "mandatory": true,
+      "worker_id": "9de9ff08-fa2c-5377-9357-a744e34ed541",
+      "machine_id": "6117d2ec-8b32-5b51-aca7-793ba416506b",
+      "equipment_ids": [
+        "ed2f22bc-e7c6-54a9-83fb-2dba032390a1"
+      ],
+      "phase": "SPRAY",
+      "field_index": 7,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "4e1b6fa2-29c5-57af-aaf7-ad6a144b69a8",
+      "name": "Sklizeň Sad",
+      "operation_type": "HARVEST",
+      "field_id": "633a6763-b659-5a6e-bb01-7485d8688ec4",
+      "area_ha": "12.0000",
+      "mandatory": true,
+      "worker_id": "08bae86b-925f-52c1-a04c-239ea0eb4c7d",
+      "machine_id": "32fe06e8-14c4-5ba0-82e6-b9459ad6f1a5",
+      "equipment_ids": [
+        "7626597f-cb64-568a-8e16-71a6c5acb7de"
+      ],
+      "phase": "HARVEST",
+      "field_index": 7,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "7598c031-d568-5368-a783-11943bb75936",
+      "name": "Orba Dolina",
+      "operation_type": "PLOUGH",
+      "field_id": "a6710119-20e1-5f9c-979d-6b49c052ba93",
+      "area_ha": "14.0000",
+      "mandatory": true,
+      "worker_id": "8860d75c-d0b3-533e-a4a4-26f8d13d4f42",
+      "machine_id": "f7d8c060-6ebb-5c17-bdef-ca8a89d86e5f",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 8,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "c5eb72bf-5bbb-5a48-bcf6-4b2e74b2d1ad",
+      "name": "Setí Dolina",
+      "operation_type": "SOW",
+      "field_id": "a6710119-20e1-5f9c-979d-6b49c052ba93",
+      "area_ha": "14.0000",
+      "mandatory": true,
+      "worker_id": "e50bcfe1-91e4-5fb1-96c9-8c22b0d30fd8",
+      "machine_id": "b28357a4-3d4e-5606-b38c-d2567ee5677e",
+      "equipment_ids": [
+        "3c824950-d102-5828-91bd-b86b5754444c"
+      ],
+      "phase": "SOW",
+      "field_index": 8,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "82345430-4ccc-5e60-9fe1-00ec29c975ee",
+      "name": "Postřik Dolina",
+      "operation_type": "SPRAY",
+      "field_id": "a6710119-20e1-5f9c-979d-6b49c052ba93",
+      "area_ha": "14.0000",
+      "mandatory": true,
+      "worker_id": "34067ad2-491c-54a8-bc67-502899e06e12",
+      "machine_id": "ac144e69-97ea-5ce5-8eb1-05f0649bb913",
+      "equipment_ids": [
+        "3a650798-7e96-5ffd-bb2f-243b5f750778"
+      ],
+      "phase": "SPRAY",
+      "field_index": 8,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "9faa390d-fe6e-5556-bef9-fd1fa0cec8e9",
+      "name": "Sklizeň Dolina",
+      "operation_type": "HARVEST",
+      "field_id": "a6710119-20e1-5f9c-979d-6b49c052ba93",
+      "area_ha": "14.0000",
+      "mandatory": true,
+      "worker_id": "9a311d7e-78cb-5df5-82ea-0b1b582c5d6a",
+      "machine_id": "6a0ca78e-4d8e-57b5-8cdd-459cb5139c08",
+      "equipment_ids": [
+        "09bd9cc9-a927-57cf-ba00-f5f52f2a25d6"
+      ],
+      "phase": "HARVEST",
+      "field_index": 8,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "d56ce095-4c12-506d-ba6d-82fa375fa41a",
+      "name": "Orba Rovina",
+      "operation_type": "PLOUGH",
+      "field_id": "102e36ee-22c0-5783-bc90-c15c81a94dd7",
+      "area_ha": "16.0000",
+      "mandatory": true,
+      "worker_id": "c17d400f-f8ad-55fc-b0b6-023db16eb0f7",
+      "machine_id": "eb7cb0a1-7e12-5b61-8c62-c4352ab3e314",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 9,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "ca59096e-ee81-5658-90cb-f6ec8a8d2ccf",
+      "name": "Setí Rovina",
+      "operation_type": "SOW",
+      "field_id": "102e36ee-22c0-5783-bc90-c15c81a94dd7",
+      "area_ha": "16.0000",
+      "mandatory": true,
+      "worker_id": "ac4bcd52-96b9-5c84-bc78-5c6ba72d781b",
+      "machine_id": "37e73cb2-d42b-5ee6-b1bf-aaf1d52c18f3",
+      "equipment_ids": [
+        "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93"
+      ],
+      "phase": "SOW",
+      "field_index": 9,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "cbe9037b-5bfa-54e4-bb3d-8ced36d67f90",
+      "name": "Postřik Rovina",
+      "operation_type": "SPRAY",
+      "field_id": "102e36ee-22c0-5783-bc90-c15c81a94dd7",
+      "area_ha": "16.0000",
+      "mandatory": true,
+      "worker_id": "cb47bd55-d47b-54d0-a1e3-b50b320ec5d6",
+      "machine_id": "ad4b3d55-3023-52a5-b03b-907e10f17107",
+      "equipment_ids": [
+        "e72b433a-47de-5e60-8e62-15c0dca3ec15"
+      ],
+      "phase": "SPRAY",
+      "field_index": 9,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "b04e35c3-5124-5dbe-b19f-b7a6c724d5b1",
+      "name": "Sklizeň Rovina",
+      "operation_type": "HARVEST",
+      "field_id": "102e36ee-22c0-5783-bc90-c15c81a94dd7",
+      "area_ha": "16.0000",
+      "mandatory": true,
+      "worker_id": "8297f9ab-5ff3-5f43-97a0-23c8c9eddc43",
+      "machine_id": "90c06ba3-5c00-5765-9812-adfc21df750c",
+      "equipment_ids": [
+        "01082a03-3ac8-55cf-a69b-166a21d73f84"
+      ],
+      "phase": "HARVEST",
+      "field_index": 9,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "fd4b6322-e2bc-51db-81fd-119708b3c54d",
+      "name": "Orba Vrchy",
+      "operation_type": "PLOUGH",
+      "field_id": "494abc89-617b-5029-96c0-b66c111cfc94",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "27a319fd-30af-5d82-9a86-9c92c5c6a27d",
+      "machine_id": "b28357a4-3d4e-5606-b38c-d2567ee5677e",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 10,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "84974d27-5077-5363-8a11-1ad73144828e",
+      "name": "Setí Vrchy",
+      "operation_type": "SOW",
+      "field_id": "494abc89-617b-5029-96c0-b66c111cfc94",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "b2f21c05-d1a3-532e-bf0f-c359c855ef23",
+      "machine_id": "664743b3-01c5-5391-bc4d-7cbeac2eeb51",
+      "equipment_ids": [
+        "3c824950-d102-5828-91bd-b86b5754444c"
+      ],
+      "phase": "SOW",
+      "field_index": 10,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "95c32d64-36fc-5d75-9568-9c517a00a0bd",
+      "name": "Postřik Vrchy",
+      "operation_type": "SPRAY",
+      "field_id": "494abc89-617b-5029-96c0-b66c111cfc94",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "9de9ff08-fa2c-5377-9357-a744e34ed541",
+      "machine_id": "6117d2ec-8b32-5b51-aca7-793ba416506b",
+      "equipment_ids": [
+        "ed2f22bc-e7c6-54a9-83fb-2dba032390a1"
+      ],
+      "phase": "SPRAY",
+      "field_index": 10,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "df9c0d35-65f5-568a-a983-0ba239cf688d",
+      "name": "Sklizeň Vrchy",
+      "operation_type": "HARVEST",
+      "field_id": "494abc89-617b-5029-96c0-b66c111cfc94",
+      "area_ha": "8.0000",
+      "mandatory": true,
+      "worker_id": "c17d400f-f8ad-55fc-b0b6-023db16eb0f7",
+      "machine_id": "32fe06e8-14c4-5ba0-82e6-b9459ad6f1a5",
+      "equipment_ids": [
+        "7626597f-cb64-568a-8e16-71a6c5acb7de"
+      ],
+      "phase": "HARVEST",
+      "field_index": 10,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "96d49562-0a97-5c20-8984-2b45fed7cde4",
+      "name": "Orba Meze",
+      "operation_type": "PLOUGH",
+      "field_id": "3eb7488b-775b-584c-af42-4b65ab84fde2",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "2a6fd470-d5e2-5434-8226-92ea04356ae1",
+      "machine_id": "37e73cb2-d42b-5ee6-b1bf-aaf1d52c18f3",
+      "equipment_ids": [
+        "1596fa26-826a-5904-b4e7-d2eaf68c6e1e"
+      ],
+      "phase": "PLOUGH",
+      "field_index": 11,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "a57b9837-9376-5349-a312-ea714a01a02b",
+      "name": "Setí Meze",
+      "operation_type": "SOW",
+      "field_id": "3eb7488b-775b-584c-af42-4b65ab84fde2",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "8860d75c-d0b3-533e-a4a4-26f8d13d4f42",
+      "machine_id": "abe390fd-bb06-5d62-82cc-a66b5793bf94",
+      "equipment_ids": [
+        "7f5a0a4b-6271-59c0-bd63-be6ba0aebc93"
+      ],
+      "phase": "SOW",
+      "field_index": 11,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "3ff65758-628e-5c9b-ba13-6b2de8529510",
+      "name": "Postřik Meze",
+      "operation_type": "SPRAY",
+      "field_id": "3eb7488b-775b-584c-af42-4b65ab84fde2",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "34067ad2-491c-54a8-bc67-502899e06e12",
+      "machine_id": "ac144e69-97ea-5ce5-8eb1-05f0649bb913",
+      "equipment_ids": [
+        "3a650798-7e96-5ffd-bb2f-243b5f750778"
+      ],
+      "phase": "SPRAY",
+      "field_index": 11,
+      "is_non_disruptive": false
+    },
+    {
+      "id": "76aaf924-ca5a-584b-bfc8-738a648ce09a",
+      "name": "Sklizeň Meze",
+      "operation_type": "HARVEST",
+      "field_id": "3eb7488b-775b-584c-af42-4b65ab84fde2",
+      "area_ha": "10.0000",
+      "mandatory": true,
+      "worker_id": "cb47bd55-d47b-54d0-a1e3-b50b320ec5d6",
+      "machine_id": "6a0ca78e-4d8e-57b5-8cdd-459cb5139c08",
+      "equipment_ids": [
+        "09bd9cc9-a927-57cf-ba00-f5f52f2a25d6"
+      ],
+      "phase": "HARVEST",
+      "field_index": 11,
+      "is_non_disruptive": false
+    }
+  ],
+  "dependencies": [
+    {
+      "predecessor_id": "1ccb62ac-0b62-5e9f-873d-1c4e460039e6",
+      "successor_id": "d21e6ff0-7338-58ad-800f-7df95ac80b7e",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "d21e6ff0-7338-58ad-800f-7df95ac80b7e",
+      "successor_id": "5854cfd3-99ea-5bfe-9b67-344a5145bbbf",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "5854cfd3-99ea-5bfe-9b67-344a5145bbbf",
+      "successor_id": "fa2ef39c-3c21-5074-b2cc-cb4e0f88b15e",
+      "min_lag_minutes": 10080
+    },
+    {
+      "predecessor_id": "da616f89-b284-5797-b0a8-ce2ebb639d1c",
+      "successor_id": "2be4e21c-1168-50e6-8ddf-0805b42fdd03",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "2be4e21c-1168-50e6-8ddf-0805b42fdd03",
+      "successor_id": "65c19472-c118-59e2-a7fb-8061a486b9dd",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "65c19472-c118-59e2-a7fb-8061a486b9dd",
+      "successor_id": "24a8e019-3aec-571f-b6f5-04c6dd40fb4e",
+      "min_lag_minutes": 10080
+    },
+    {
+      "predecessor_id": "f4b98427-1fd5-5999-a450-d2d87d3c50de",
+      "successor_id": "f2e1bd39-a47e-5eaa-b3eb-f70c3b537493",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "f2e1bd39-a47e-5eaa-b3eb-f70c3b537493",
+      "successor_id": "47e1151e-f473-5b6d-8a14-5e6be59bc4e1",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "47e1151e-f473-5b6d-8a14-5e6be59bc4e1",
+      "successor_id": "a8b204cf-e1d9-5dc1-be3a-c0146210d191",
+      "min_lag_minutes": 10080
+    },
+    {
+      "predecessor_id": "e4258b6a-bbee-53d1-9a9b-58c428ad4555",
+      "successor_id": "b1ea21f2-fe30-589a-82d4-206abce66c6d",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "b1ea21f2-fe30-589a-82d4-206abce66c6d",
+      "successor_id": "0cc17eb6-9303-541a-bc61-6ce44dd71263",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "0cc17eb6-9303-541a-bc61-6ce44dd71263",
+      "successor_id": "4563fc56-339c-54fb-a25c-ad67234a88ec",
+      "min_lag_minutes": 10080
+    },
+    {
+      "predecessor_id": "f461c36b-c322-5576-8805-2ba183ba65e6",
+      "successor_id": "294ef4d9-8199-5bd8-ae64-b6bde805d959",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "294ef4d9-8199-5bd8-ae64-b6bde805d959",
+      "successor_id": "bf7027ca-e506-524f-bdc5-0903e2e20e56",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "bf7027ca-e506-524f-bdc5-0903e2e20e56",
+      "successor_id": "712c4671-857c-57a3-a798-b90fb3dd74f7",
+      "min_lag_minutes": 10080
+    },
+    {
+      "predecessor_id": "3aefcb28-bfee-5246-a73d-00f7ac00f8eb",
+      "successor_id": "29642a8d-ff40-5cb2-a78e-0f12218022fd",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "29642a8d-ff40-5cb2-a78e-0f12218022fd",
+      "successor_id": "edf059a3-7751-51d6-aabb-f5b95c892756",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "edf059a3-7751-51d6-aabb-f5b95c892756",
+      "successor_id": "5931ffdb-3dd5-58fc-9aa6-067a1440485b",
+      "min_lag_minutes": 10080
+    },
+    {
+      "predecessor_id": "afdea189-4864-5995-8cef-c029b7be1103",
+      "successor_id": "dfcc6b4a-0cda-5e8e-b5e4-f57c7141f173",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "dfcc6b4a-0cda-5e8e-b5e4-f57c7141f173",
+      "successor_id": "7698d4eb-415d-5e09-beac-1f092bb1fe4b",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "7698d4eb-415d-5e09-beac-1f092bb1fe4b",
+      "successor_id": "92d7f044-f49f-53cf-ad8d-d6facd4cb1e0",
+      "min_lag_minutes": 10080
+    },
+    {
+      "predecessor_id": "72a7a679-ae5d-5372-9276-060fc445362b",
+      "successor_id": "a89d6436-ec93-5dbe-b464-4d22b26c7f48",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "a89d6436-ec93-5dbe-b464-4d22b26c7f48",
+      "successor_id": "266a5daf-643f-5d6e-8f86-708951f45544",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "266a5daf-643f-5d6e-8f86-708951f45544",
+      "successor_id": "4e1b6fa2-29c5-57af-aaf7-ad6a144b69a8",
+      "min_lag_minutes": 10080
+    },
+    {
+      "predecessor_id": "7598c031-d568-5368-a783-11943bb75936",
+      "successor_id": "c5eb72bf-5bbb-5a48-bcf6-4b2e74b2d1ad",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "c5eb72bf-5bbb-5a48-bcf6-4b2e74b2d1ad",
+      "successor_id": "82345430-4ccc-5e60-9fe1-00ec29c975ee",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "82345430-4ccc-5e60-9fe1-00ec29c975ee",
+      "successor_id": "9faa390d-fe6e-5556-bef9-fd1fa0cec8e9",
+      "min_lag_minutes": 10080
+    },
+    {
+      "predecessor_id": "d56ce095-4c12-506d-ba6d-82fa375fa41a",
+      "successor_id": "ca59096e-ee81-5658-90cb-f6ec8a8d2ccf",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "ca59096e-ee81-5658-90cb-f6ec8a8d2ccf",
+      "successor_id": "cbe9037b-5bfa-54e4-bb3d-8ced36d67f90",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "cbe9037b-5bfa-54e4-bb3d-8ced36d67f90",
+      "successor_id": "b04e35c3-5124-5dbe-b19f-b7a6c724d5b1",
+      "min_lag_minutes": 10080
+    },
+    {
+      "predecessor_id": "fd4b6322-e2bc-51db-81fd-119708b3c54d",
+      "successor_id": "84974d27-5077-5363-8a11-1ad73144828e",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "84974d27-5077-5363-8a11-1ad73144828e",
+      "successor_id": "95c32d64-36fc-5d75-9568-9c517a00a0bd",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "95c32d64-36fc-5d75-9568-9c517a00a0bd",
+      "successor_id": "df9c0d35-65f5-568a-a983-0ba239cf688d",
+      "min_lag_minutes": 10080
+    },
+    {
+      "predecessor_id": "96d49562-0a97-5c20-8984-2b45fed7cde4",
+      "successor_id": "a57b9837-9376-5349-a312-ea714a01a02b",
+      "min_lag_minutes": 1440
+    },
+    {
+      "predecessor_id": "a57b9837-9376-5349-a312-ea714a01a02b",
+      "successor_id": "3ff65758-628e-5c9b-ba13-6b2de8529510",
+      "min_lag_minutes": 5760
+    },
+    {
+      "predecessor_id": "3ff65758-628e-5c9b-ba13-6b2de8529510",
+      "successor_id": "76aaf924-ca5a-584b-bfc8-738a648ce09a",
+      "min_lag_minutes": 10080
+    }
+  ],
+  "starting_date_file": "starting_date.json",
+  "planning_policy_file": "planning_policy.json",
+  "agronomic_status": "COMPRESSED_TECHNICAL_DEMO_NOT_A_REAL_CROP_CALENDAR"
+}

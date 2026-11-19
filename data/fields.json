@@ -1,0 +1,113 @@
+{
+  "schema_version": "fieldscheduler-fields-sample/v2",
+  "fields": [
+    {
+      "id": "35ecc393-f520-508c-b432-cc2b598bcbb7",
+      "name": "Sever",
+      "code": "SEVER",
+      "entrance_location_id": "9e757f9e-96cf-5d62-ac20-ed5c848f5ab5",
+      "area_ha": "8.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 0.85
+    },
+    {
+      "id": "e867d396-6640-5f1b-b80c-19f9adfe7532",
+      "name": "Jih",
+      "code": "JIH",
+      "entrance_location_id": "201490f8-34e1-5ad6-b0e8-f33352ccdf10",
+      "area_ha": "10.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 0.9
+    },
+    {
+      "id": "c55b1b62-cffe-5f91-8f9e-f55259223704",
+      "name": "Údolí",
+      "code": "UDOLU",
+      "entrance_location_id": "1abe990f-6734-55c5-9a0b-300f24237757",
+      "area_ha": "12.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 0.95
+    },
+    {
+      "id": "db4a1702-0586-5740-80dd-89b5804e284c",
+      "name": "Západ",
+      "code": "ZUPAD",
+      "entrance_location_id": "4dba504f-644f-59b8-af59-24ed10912dc3",
+      "area_ha": "14.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 1.0
+    },
+    {
+      "id": "489244f3-1090-57fb-b9a0-5582ec2c4909",
+      "name": "Východ",
+      "code": "VUCHOD",
+      "entrance_location_id": "d08dc8d0-6c5a-56fd-b609-6bffbad3fd47",
+      "area_ha": "16.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 0.85
+    },
+    {
+      "id": "1081637c-c539-57b7-8238-437f61c11ff1",
+      "name": "Louka",
+      "code": "LOUKA",
+      "entrance_location_id": "e8ddd743-8286-53ac-8f89-d0bdcbd721bb",
+      "area_ha": "8.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 0.9
+    },
+    {
+      "id": "7bd3f87d-9148-5eb7-a12b-4e6cfca10114",
+      "name": "Háj",
+      "code": "HUJ",
+      "entrance_location_id": "5aebede4-319f-593c-a918-ae01c38aa953",
+      "area_ha": "10.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 0.95
+    },
+    {
+      "id": "633a6763-b659-5a6e-bb01-7485d8688ec4",
+      "name": "Sad",
+      "code": "SAD",
+      "entrance_location_id": "b5118a51-e145-5620-84b8-cc796f5ec3f4",
+      "area_ha": "12.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 1.0
+    },
+    {
+      "id": "a6710119-20e1-5f9c-979d-6b49c052ba93",
+      "name": "Dolina",
+      "code": "DOLINA",
+      "entrance_location_id": "f79e3584-99e9-54bf-81b8-e8fbe5a0a065",
+      "area_ha": "14.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 0.85
+    },
+    {
+      "id": "102e36ee-22c0-5783-bc90-c15c81a94dd7",
+      "name": "Rovina",
+      "code": "ROVINA",
+      "entrance_location_id": "509e5365-dcfc-54a2-a434-12c65110da41",
+      "area_ha": "16.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 0.9
+    },
+    {
+      "id": "494abc89-617b-5029-96c0-b66c111cfc94",
+      "name": "Vrchy",
+      "code": "VRCHY",
+      "entrance_location_id": "81d3f7e4-98ed-5d45-8bf0-0902a1889e6d",
+      "area_ha": "8.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 0.95
+    },
+    {
+      "id": "3eb7488b-775b-584c-af42-4b65ab84fde2",
+      "name": "Meze",
+      "code": "MEZE",
+      "entrance_location_id": "08101b61-b595-53b9-aaef-dfa5114d2076",
+      "area_ha": "10.0000",
+      "location_type": "ARABLE_FIELD",
+      "productivity_factor": 1.0
+    }
+  ]
+}

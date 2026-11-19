@@ -1,0 +1,37 @@
+AUDIT: PERSONÁL, TECHNIKA A EKONOMIKA MODELU
+
+Aktuální stav
+- Rozvrh je deterministická heuristika. Upřednostňuje stálé pracovníky, již
+  využité lidi, méně krátkých pracovních angažmá a nižší hodinové sazby.
+- Přidělení dovolené je tvrdé omezení. Soubor Unused označuje pouze zdroje,
+  které nebyly v tomto konkrétním plánu přidělené. Neprokazuje, že lze jejich
+  úvazek nebo stroj bezpečně zrušit.
+- Náklady jsou vzorové částky v Kč za hodinu skutečně přidělené práce nebo
+  strojového času. Výsledek není účetní rozpočet ani důkaz nejnižší ceny.
+
+Priority pro další vývoj
+1. Zavést explicitní optimalizační model s proměnnou pro aktivaci pracovníka,
+   pracovního dne a stroje. Lexikograficky nejprve pokrýt povinné úkoly, potom
+   minimalizovat počet lidí a celkové náklady, nakonec změny pracoviště.
+   Zveřejňovat mez optimality a časový limit výpočtu.
+2. Oddělit stálé zaměstnance, sezonní výpomoc, přesčasy, garantovanou mzdu,
+   placené přestávky a příplatky. Mzdu vykázat podle skutečných smluvních
+   podmínek, ne jen podle součtu minut úkolů.
+3. U techniky rozdělit fixní náklad vlastnictví (odpisy, financování, pojištění,
+   skladování) a variabilní náklad provozu (palivo, opravy, údržba). Přidat
+   servisní odstávky, poruchovost a možnost pronájmu nebo sdílení stroje.
+4. Přidat skutečné mapy a cestovní časy. Dnes je přesun pracovníka jen pevná
+   rezerva, která neodpovídá vzdálenosti ani dopravní situaci.
+5. Rozlišit povinné denní úkoly, flexibilní zásahy a podmíněné agronomické
+   činnosti. Penalizovat odklad podle dopadu na výnos, welfare a provoz.
+6. Zavést scénáře počasí, růstu plodin, výpadků pracovníků a strojů. Vytvářet
+   robustní plán s rezervní kapacitou a rychlým přeplánováním.
+7. Kontrolovat kvalifikace, zastupitelnost, dovolené, nemoc, plán směn a
+   evidenci vykonané práce proti plánu. Nepoužitý pracovník může být rezerva.
+8. Doplnit úplnou ekonomiku plodin: vstupy, výnos, cenu, sklad, logistiku,
+   externí služby, ztráty z opožděné sklizně a citlivost výsledků.
+
+Zdroje metodických doporučení:
+https://developers.google.com/optimization/scheduling/employee_scheduling
+https://developers.google.com/optimization/service/scheduling/workforce_scheduling
+https://www.extension.iastate.edu/Agdm/crops/html/a3-29.html

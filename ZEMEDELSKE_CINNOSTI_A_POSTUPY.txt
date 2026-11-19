@@ -1,0 +1,315 @@
+KATALOG ZEMĚDĚLSKÝCH ČINNOSTÍ, NÁVAZNOSTÍ A PROVOZNÍCH DOPORUČENÍ
+Verze 1, 18. 11. 2026. Výchozí kontext: zemědělský podnik v mírném pásu.
+
+JAK KATALOG POUŽÍVAT
+Jde o návrh provozních šablon, nikoli univerzální kalendář. Termín závisí na
+plodině, odrůdě, půdě, nadmořské výšce, počasí, technice, systému chovu a cíli
+produkce. Četnosti níže jsou výchozí plánovací doporučení. Konkrétní šablonu
+schvaluje agronom, zootechnik nebo veterinář. Zdroje S1–S13 jsou na konci.
+
+Šipka A -> B znamená nutnou návaznost v dané větvi. Některé větve jsou volitelné:
+orba není povinná pro bezorebné hospodaření; postřik není automatický krok po
+každém setí. Ochranná lhůta není univerzálních sedm dní. Sklizeň vyžaduje zralost,
+vhodnou vlhkost a splnění ochranných lhůt konkrétního přípravku. [S1, S2, S3]
+Původní vzor programu se 4 kroky během 21 dnů je pouze technická simulace.
+
+U každé práce evidovat: typ lokace, produkt/porost/stádo, množství a jednotku,
+nejdřívější a nejpozdější termín, prioritu, předchůdce, minimální/maximální odstup,
+opakování, potřebné dovednosti a techniku, spotřeby, podmínky počasí, hlučnost,
+trvání přípravy a úklidu, možnost přerušení, měřitelné dokončení a odpovědnou osobu.
+Výkon ha/h je vhodný pro plošné práce. U chovu používat například zvířata/h,
+stání/h, litry/h; u skladů tuny/h a u kontrol min/kontrola. Nevymýšlet hektary
+pro dojení nebo krmení.
+
+1. ORNÉ POLE: OBILNINY, KUKUŘICE, OLEJNINY, LUSKOVINY, OKOPANINY
+Typická větev: plán osevu -> rozbor a vyhodnocení půdy -> příprava pozemku
+-> založení porostu -> průběžná péče -> sklizeň -> odvoz -> ošetření produkce
+-> posklizňový management. V bezorebném systému je příprava odlišná.
+
+- Osevní postup, výběr odrůdy, osivo a smlouvy: před sezonou, přezkoumat ročně.
+  Zahrnout předplodinu, choroby, erozní riziko a návaznost dalších kultur.
+- Půdní vzorkování: před rozhodnutím o hnojení, ve srovnatelném období a podle
+  laboratorního plánu. Některé parametry se sledují víceletě, dusík častěji. [S1]
+- Kontrola pozemku, odvodnění, kolejí a přístupů: před každým větším zásahem;
+  mimořádně po záplavě, přívalovém dešti nebo poškození.
+- Podmítka a práce s posklizňovými zbytky: po sklizni, pokud ji zvolený systém
+  vyžaduje; zohlednit vláhu, výdrol, erozi a další plánované práce.
+- Orba, kypření, hloubkové kypření: podle technologie, nikoli automaticky každoročně.
+  Nevjíždět na neúnosnou nebo zamokřenou půdu; hluboké kypření až po diagnóze utužení.
+- Hnůj, kompost, kejda a minerální hnojiva: podle bilance živin, rozboru, potřeby
+  plodiny a povolených podmínek aplikace. Zapravení navázat na typ materiálu,
+  technologii a místní pravidla; nesjednocovat všechna hnojiva do stejné lhůty.
+- Vápnění: podle pH a doporučené potřeby, obvykle jako víceletý zásah; plánovat
+  kompatibilitu s dalšími aplikacemi a citlivostí následné plodiny.
+- Předseťová příprava, smykování, vláčení, tvorba hrůbků: před setím/sázením podle
+  plodiny. Omezit počet přejezdů a zbytečné vysoušení půdy.
+- Setí/sázení: v agrotechnickém okně při vhodné půdní teplotě a vlhkosti.
+  Kontrola dávky, hloubky a rozteče při zahájení a po změně podmínek/stroje.
+- Válení: jen pokud přínos pro danou plodinu a půdu převáží riziko škraloupu.
+- Kontrola vzcházení a hustoty: po očekávaném vzejití; rozhodnutí o dosevu po
+  vyhodnocení, ne automaticky po první nerovnoměrnosti.
+- Monitoring plevelů, chorob a škůdců: výchozí obchůzka 1–2x týdně v sezoně;
+  při rizikovém počasí či signalizaci častěji. Tento interval je návrh režimu.
+- Plečkování, vláčení porostu, ruční odplevelení: v citlivé fázi plevelů a při
+  dostatečné odolnosti porostu, podle zvolené technologie.
+- Ochrana rostlin: až po rozhodnutí podle monitoringu; prověřit registraci,
+  etiketu, vítr, déšť, teplotu, sousední plochy, osoby, opylovače a vodní zdroje.
+  Po aplikaci vznikají samostatné blokace vstupu a sklizně. [S2, S3]
+- Přihnojení, listová výživa, závlaha: podle růstové fáze, měření a bilance;
+  závlahu kontrolovat během každého běhu, nevázat na pouhé pevné dny.
+- Kontrola zralosti a vlhkosti: před sklizní, v závěru podle rychlosti změn i denně.
+- Sklizeň, odvoz, čištění, sušení, dosoušení, třídění: navazující kapacity musí
+  být dostupné současně; sklizeň bez odvozu či příjmu je omezená zásobníkem.
+- Sláma: řezání a rozprostření NEBO shrnutí -> lisování -> odvoz -> uskladnění.
+- Meziplodina/pokryv: po sklizni v termínu vhodném pro její založení.
+- Vyhodnocení výnosů a spotřeb: po každém bloku práce, souhrn po sezoně.
+
+2. OVOCNÝ SAD
+Nový sad: posouzení stanoviště -> půda a odvodnění -> opory/závlaha -> výsadba
+-> uvázání a ochrana -> výchova stromů. Plodící sad má opakovaný sezonní cyklus.
+- Řez a tvarování: podle druhu, věku, zdravotního stavu a cíle; zpravidla roční
+  plán, některé zásahy v době vegetačního klidu, jiné v létě. Univerzální zimní
+  řez pro všechny peckoviny není správná šablona.
+- Odstranění nemocných větví a mumifikovaných plodů: při zjištění a v rámci
+  sanitace; nářadí a způsob likvidace přizpůsobit chorobě.
+- Kontrola opor, ochrany kmínků a závlahy: před sezonou a po vichřici.
+- Monitoring fenologie, škůdců a chorob: pravidelně v sezoně, intenzivně podle
+  signalizace; ochranu spouštět podle potřeby, ne povinně podle kalendáře. [S4]
+- Sečení meziřadí, mulčování a regulace podrostu: podle růstu, dostupnosti vody
+  a průjezdu; nevytvářet univerzální týdenní povinnost.
+- Závlaha a hnojení: podle půdy, listové diagnostiky, zatížení úrodou a počasí.
+- Ochrana před mrazem: příprava před rizikovou nocí; spuštění podle měření,
+  dostupnosti vody/energie a konkrétní technologie, včetně noční obsluhy.
+- Opylování a péče o květ: podle odrůd a fáze kvetení.
+- Probírka plůdků: v druhově a odrůdově vhodném okně po nasazení plodů.
+- Sklizeň: podle zralosti a odběratelských parametrů; může mít více průchodů.
+  Následuje šetrný svoz -> třídění -> chlazení/skladování -> expedice.
+
+3. LOUKA A SENÁŽNÍ POROST
+Seno: kontrola porostu a počasí -> sečení -> sušení/obracení dle potřeby -> shrnutí
+-> kontrola vlhkosti -> lisování -> odvoz -> sklad a sledování zahřívání.
+Senáž: sečení -> zavadnutí na cílovou sušinu -> sběr/lisování -> rychlé utěsnění
+nebo naskladnění a udusání -> kontrola obalu a fermentace.
+- Jarní prohlídka, odstranění kamenů a odpadu: před prvním sečením.
+- Smykování, vláčení, přísev: podle poškození a technologie; jen při únosnosti půdy.
+- Hnojení: podle výnosového cíle a bilance, obvykle navázané na sezonu a seče.
+- Sečení: podle růstové fáze, účelu krmiva, počasí a požadavků ochrany přírody;
+  počet sečí závisí na lokalitě. Zahrnout kontrolu zvěře před sečením.
+- Obracení a shrnování: podle vlhkosti, povětrnosti a ztrát listové hmoty.
+- Lisování: schvalovat podle naměřené vlhkosti a typu balíku/skladu. [S5]
+- Kontrola balíků, fólie, zatékání a teploty skladovaného sena: po založení
+  intenzivněji, později podle rizika. Oddělit vlhké a podezřelé partie.
+
+4. PASTVINA
+Zásoba píce a voda -> opravené oplocení -> vpustit vhodnou skupinu -> kontrola
+-> přesun při dosažení cílového zbytku porostu -> obnova porostu -> návrat.
+- Zvířata, napájení, elektrický ohradník a přístup: denně; ve vedru častěji.
+- Rotace: podle výšky/biomasy a obnovy porostu; pevný počet dní je jen odhad.
+- Odstraňování jedovatých rostlin, odpadů a nebezpečí: při obchůzce.
+- Dosekání nedopasků, přísev a živiny: podle stavu, po odchodu skupiny.
+- Zdravotní a parazitologický plán: s veterinářem, bez plošného automatického
+  odčervování pouze podle kalendáře.
+
+5. RYBNÍK A RYBÍ HOSPODÁŘSTVÍ
+Kontrola a příprava nádrže -> napouštění a vhodná voda -> zdravotně prověřená
+obsádka a aklimatizace -> chov a sledování -> příprava výlovu -> výlov -> třídění
+-> transport/sádkování -> evidence a údržba dalšího cyklu. [S6, S7]
+- Česle, přítok/odtok, hráze, hladina, úniky a chování ryb: denní obchůzka.
+- Kyslík a teplota: měření podle systému a rizika, zejména k ránu; ve výkonném
+  chovu průběžná čidla s alarmem. Počasí a krmení mohou situaci rychle změnit.
+- Krmení: podle druhu, velikosti, biomasy, teploty a kyslíku; dávky přepočítávat
+  podle růstu a příjmu. Při problému s kyslíkem neuplatňovat běžnou dávku slepě.
+- Aerace: podle potřeby, může být životně nutná v noci; nelze ji odložit kvůli
+  běžnému pracovnímu oknu nebo prostě prohlásit za tichou.
+- Další parametry vody a zdravotní monitoring: rizikový plán s odborníkem.
+- Vzorkování přírůstků a úprava obsádky: v pravidelných intervalech podle chovu.
+- Výlov: až po zajištění lidí, techniky, vody, kyslíku, transportu a odběru.
+- Odbahnění, opravy a případná úprava dna: mimo chovný cyklus podle potřeby
+  a oprávnění; vápnění či jiné zásahy nejsou automaticky vhodné pro každou nádrž.
+
+6. KRAVÍN, DOJÍRNA A MLÉČNICE
+Trvalé denní proudy: voda/krmení; zdraví a welfare; dojení laktujících krav;
+čistota lehacích míst; odkliz hnoje; péče o telata. Nejde o jednu lineární linku.
+- Dojení: typicky 2x nebo 3x denně podle režimu stáda; výchozí cílové rozestupy
+  přibližně 12 nebo 8 hodin. Robotický systém se řídí vlastními pravidly návštěv.
+  Suchostojné krávy se do běžného plánu dojení nezařazují.
+- Pořadí dojení: připravit zařízení a hygienu -> identifikovat zvíře -> rutinní
+  kontrola a příprava vemene -> dojení -> ošetření po dojení -> kontrola mléka,
+  chlazení a sanitace. Postup má být konzistentní a proškolený. [S8]
+- Krmení: připravit krmnou dávku podle skupiny -> založit -> během dne kontrolovat
+  dostupnost a přihrnovat -> vyhodnotit zbytky. Konkrétní počet založení závisí
+  na technologii, teplotě a dávce; přihrnování není další plná dávka.
+- Voda, ventilace, tepelný stres: kontrola denně a při každé rizikové situaci;
+  ve vedru intenzivněji, funkci automatů průběžně sledovat.
+- Stlaní: denně kontrolovat čistotu a suchost lehacích míst, odstranit mokrá
+  a znečištěná místa; doplňovat podle materiálu a zátěže. Úplná výměna podle
+  systému, nikoli univerzálně každý den. Plánovat i zásobu podestýlky. [S8]
+- Hnůj a kejda: odkliz podle technologie a zatížení, kontrola shrnovačů denně.
+- Zdravotní obchůzka, příjem krmiva, kulhání, říje: denně a při dojení;
+  porody, nemocná zvířata a čerstvě otelené krávy mají zvláštní režim.
+- Paznehty, reprodukce, očkování, zaprahování: individuální plán s odborníky.
+- Telata: narození -> řízená péče a kolostrum -> individuální krmení a kontrola
+  -> postupný přechod podle vývoje. Časné kroky neodkládat do další běžné směny.
+
+7. VEPŘÍN
+Turnus: prázdná sekce -> mechanická očista -> mytí -> vhodná dezinfekce
+-> vysušení a kontrola -> naskladnění -> chov -> vyskladnění -> další sanitace.
+- Zdraví, chování, úhyny, poranění a dostupnost krmiva/vody: nejméně denní
+  kontrola; porodny a nemocná zvířata podle potřeby častěji. [S9]
+- Krmení: podle kategorie a krmné technologie, kontrola funkce dávkovačů denně.
+- Napáječky: denně kontrolovat dostupnost, průtok a znečištění. [S10]
+- Teplota, ventilace, vlhkost, alarmy a záložní energie: průběžná dostupnost,
+  denní provozní kontrola a plánované zkoušky.
+- Podestýlka a obohacení prostředí: denně kontrolovat stav, dostupnost a čistotu;
+  doplnění podle spotřeby a systému. Odkliz exkrementů podle technologie.
+- Porody, selata, přesuny a odstav: samostatné šablony podle stáří a zdravotního
+  stavu, proškolené osoby. Veterinární úkony plánovat podle oprávnění.
+- Biosekurita: čisté -> rizikové skupiny; mezi skupinami očista, výměna pomůcek
+  a oděvů podle SOP. Modelovat čas hygienického přechodu. [S9]
+
+8. DRŮBEŽÁRNA A KURNÍK
+Turnusová příprava -> vyhřátí a funkční vybavení -> naskladnění -> odchov/chov
+-> sběr vajec nebo vyskladnění -> sanitace. Nosnice a brojleři mají jiné šablony.
+- Kontrola hejna, úhynů, krmiva, vody, podestýlky, ventilace a teploty: denně,
+  u mladých kuřat a v extrému častěji. [S11]
+- Sběr vajec: v několika průchodech podle systému a produkce; následně třídění,
+  označení a vhodné skladování. Evidence snášky denně.
+- Podestýlka: průběžně odstraňovat mokrá místa, řešit příčinu vlhkosti.
+- Světelný režim: podle kategorie a programu chovu, ne libovolně podle dostupnosti
+  pracovníka. Běžná noční kontrola nemá rušit klid hejna.
+- Deratizace, ochrana před volně žijícími ptáky a vstupní hygiena: průběžně;
+  záznamy a provozní kontroly v pevném schváleném režimu.
+
+9. OVČÍN, KOZÍN A STÁJ KONÍ
+- Denně: zdravotní obchůzka, krmivo a voda, lehací místa/podestýlka, bezpečnost,
+  výběh nebo pastva podle systému a počasí.
+- Dojení koz/ovcí: jen příslušné laktující skupiny; vlastní režim podobně jako
+  v dojírně, s navázanou hygienou a chlazením.
+- Bahnění/kocení/hřebení: podle skutečných událostí a potřeby stálé pohotovosti.
+- Stříhání ovcí: podle plemene, sezony a welfare; připravit suché čisté zvíře,
+  místo, proškolenou obsluhu a následnou ochranu.
+- Paznehty/kopyta, chrup, paraziti: individuální plán s odborníkem.
+- Čištění boxů, hnojiště a zásob: denní kontrola, doplnění podle spotřeby.
+
+10. SKLENÍK, FÓLIOVNÍK, ŠKOLKA A ZELINÁŘSKÝ ZÁHON
+Sanitace -> příprava substrátu/záhonu -> osivo nebo sadba -> pěstování
+-> opakovaná sklizeň/expedice -> odstranění zbytků -> sanitace dalšího cyklu.
+- Závlaha, klima, stínění, větrání a napájení systému: denní kontrola; vhodné
+  řízení přes čidla, automatické limity a alarmy.
+- Příprava a výsev sadby, pikýrování, přesazování, otužování: podle vývoje sazenic
+  a termínu výsadby; nikdy nevynucovat stejnou délku pro všechny druhy.
+- Vyvazování, vedení, vyštipování a opylování: podle plodiny, pravidelné průchody.
+- Hnojení/fertigace: podle analýzy vody, receptury a stavu; kontrolovat EC/pH
+  tam, kde je to součást technologie.
+- Monitoring chorob/škůdců a biologická ochrana: pravidelně, se záznamem výskytu;
+  kompatibilitu zásahů kontrolovat i vůči užitečným organismům.
+- Sklizeň: podle zralosti, často opakovaná; šetrné zacházení, dohledatelné šarže
+  a navazující třídění/chlazení. Hygienu rukou a pomůcek plánovat jako práci.
+
+11. VINICE, CHMELNICE A BOBULOVINY
+- Klidová a předsezonní údržba opor a drátů -> vhodný řez -> vyvazování/vedení
+  -> zelené práce -> monitoring a podmíněná ochrana -> zralost -> sklizeň.
+- Vinná réva: podlom, osečkování, práce s listovou stěnou a hrozny podle cíle.
+- Chmel: řez, zavádění, navazující péče, sklizeň -> rychlé sušení -> skladování.
+- Bobuloviny: výběr plodících výhonů, opory, závlaha, opakovaný sběr podle druhu.
+- Četnost podle fenologie; ochranné lhůty a bezpečný vstup zůstávají podmínkou.
+
+12. VČELNICE
+- Kontrola stanoviště a zabezpečení průběžně; prohlídky včelstev podle sezony,
+  počasí a síly, bez zbytečného rozebírání.
+- Před sezonou vyhodnotit zásoby a stav; v sezoně prostor, rojovou náladu a snůšku.
+- Medobraní: zralý med -> hygienický odběr -> vytáčení -> čištění/třídění
+  -> označení šarží a skladování. Oddělit od léčebných zásahů.
+- Monitoring a tlumení nákaz: veterinární plán a schválené postupy, nikoli
+  náhodná frekvence automaticky odvozená solverem.
+
+13. SILO, OBILNÍ SKLAD, CHLADÍRNA, BRAMBORÁRNA A BALÍRNA
+- Před příjmem: čistota, škůdci, průchodnost, senzory a kapacita.
+- Příjem -> identifikace šarže -> vzorek, vlhkost a kvalita -> vhodné čištění,
+  sušení či chlazení -> přiřazení místa -> sledování -> expedice.
+- Během příjmu sledovat každou šarži; při skladování podle teploty a rizika
+  kontrolovat častěji po naskladnění a při změně počasí.
+- Ventilace a sušárna podle měření, nikoli automatické pevné doby.
+- Čištění, balení, paletizace a nakládka: návaznost na objednávky a kapacitu.
+- Bilance hmoty, ztráty, šarže, expirace a zásoby: aktualizovat po každém pohybu.
+- Vstup do sila je zvláštní riziková činnost s oprávněním a postupem, ne běžná
+  samostatná kontrola pracovníka.
+
+14. SENÁŽNÍ ŽLAB, KRMIVÁRNA, HNOJIŠTĚ, KEJDOVÁ JÍMKA A KOMPOSTÁRNA
+- Senáž: připravit žlab -> plynulý příjem -> průběžné vrstvení a udusání
+  -> rychlé zakrytí -> kontrola těsnosti -> řízený odběr.
+- Krmivárna: kontrola zásob -> příprava dávky -> míchání -> distribuce -> úklid;
+  šarže, navážky a receptury evidovat při každé dávce.
+- Hnojiště/jímka: průběžná kontrola kapacity, úniků a přístupů; čerpání, doprava
+  a aplikace musí navazovat. Rizikové plyny vyžadují zvláštní pracovní postup.
+- Kompost: vstupní materiály -> založení -> měření teploty/vlhkosti -> podle
+  potřeby překopávání/zvlhčení -> zrání -> ověření a použití.
+
+15. DÍLNA, GARÁŽ, MYCÍ MÍSTO, ČERPACÍ STANICE A ZÁVLAHOVÁ SOUSTAVA
+- Před každou směnou stroje: provozní kontrola, úniky, bezpečnost, nastavení.
+- Po práci: očista dle stroje, tankování/nabíjení, zaznamenat závady.
+- Servis: podle motohodin a pokynů výrobce, před sezonní špičkou naplánovat
+  prohlídku a kritické náhradní díly.
+- Připojení nářadí, kalibrace dávkování, čištění mezi plodinami/přípravky:
+  před konkrétním přechodem, s rezervovaným místem, lidmi a časem.
+- Závlaha: před sezonou tlaková a funkční kontrola, během provozu úniky a filtry,
+  po sezoně vypuštění/zazimování podle systému.
+- Motorové mytí, kompresor, servisní hluk a nakládka nejsou automaticky klidné
+  práce jen proto, že probíhají uvnitř.
+
+SPOLEČNÁ PRAVIDLA PRO SOLVER
+- Odlišit pevnou návaznost, doporučené pořadí, časové okno a podmíněnou operaci.
+- Opakování může být denní, vícekrát denně, sezonní, podle motohodin, senzoru
+  nebo události (porod, porucha, práh škůdce, zralost). Denní práce nesmí zmizet
+  při optimalizaci výnosu ostatních činností.
+- 12 hodin/den je požadovaný strop práce, ne cílové denní vytížení a ne potvrzení
+  právní přípustnosti směny. Pracovní okno 04:00–24:00 je rozsah pro celou farmu.
+  Jeden člověk v něm nemá pracovat 20 hodin. Přestávky, odpočinek a týdenní režim
+  musí být samostatné podmínky. Český denní odpočinek se posuzuje v cyklu
+  po sobě jdoucích 24 hodin; nestačí jen sečíst kalendářní dny. [S13]
+- Po 22:00 povolit jen is_non_disruptive=true pro práci i její techniku.
+  Tichost posoudit pro konkrétní místo a okolí; chybějící údaj nesmí znamenat ticho.
+  Příklady kandidátů: evidence, plánování, vizuální kontrola bez hlučné techniky.
+  Orba, sklizeň, čerpadlo, nakládka, dojírna a stlaní mají vlastní posouzení hluku.
+- Životně důležitá péče, porod nebo aerace mohou vyžadovat i 00:00–04:00.
+  Pak je nutná zvláštní schválená pohotovostní politika a další personál;
+  současný běžný režim tuto situaci automaticky neřeší.
+- Seskupovat práci na stejném poli a se stejnou soupravou; přednost má ale welfare,
+  dostupnost, bezpečnost a agrotechnická lhůta. Omezovat skutečné změny lokací.
+- Výkon odvozovat od soupravy, operace, půdy, svahu a podmínek. Teoretický vztah
+  je záběr[m] * rychlost[km/h] / 10; efektivní výkon zahrnuje ztráty. [S12]
+  Výkon měřit v provozu, přípravu a přejezdy započítat samostatně bez dvojího účtu.
+- Ukládat skutečné dokončení a množství. Naplánováno není hotovo; po částečném
+  splnění přepočítat zbytek, neopakovat již provedenou práci.
+
+ZDROJE A DOSAH
+Níže uvedené zdroje podporují příslušné zásady. Navržené výchozí intervaly a
+architektura jsou syntéza pro plánování; nejde o převzetí jednoho provozního řádu.
+Mezinárodní zdroje nejsou automaticky českou právní normou.
+S1 Utah State University: Soil Sampling Guide for Crops
+https://extension.usu.edu/crops/research/soil-sampling-guide-for-crops
+S2 SZÚ: Ochranná lhůta pro vstup
+https://szu.gov.cz/temata-zdravi-a-bezpecnosti/pesticidy/por/pro-uzivatele-por/ol-vstup/
+S3 ÚKZÚZ: Registr přípravků a etiket
+https://ukzuz.gov.cz/public/app/eagriapp/POR/Vyhledavani.aspx?type=0
+S4 Washington State University: IPM Concepts
+https://treefruit.wsu.edu/crop-protection/opm/ipm-concepts/
+S5 USDA NRCS: Forage Harvest Management, practice specification
+https://efotg.sc.egov.usda.gov/api/CPSFile/33293/511_MO_PS_Forage_Harvest_Management_2021
+S6 FAO: Fish culture in undrainable ponds, management
+https://www.fao.org/4/T0555E/T0555E09.htm
+S7 AFCD: Environmental Management of Pond Fish Culture
+https://www.afcd.gov.hk/english/fisheries/fish_aqu/fish_aqu_techsup/files/common/Series3_PondCultureManagement.pdf
+S8 Penn State: Milking Management; standard operating procedures
+https://extension.psu.edu/milking-management-consistency-is-the-key
+https://animalscience.psu.edu/about/facilities/dairy-barns/pdf-dairy-sop
+S9 UK Government: Caring for pigs (zásady welfare, nikoli český právní výklad)
+https://www.gov.uk/government/publications/pigs-on-farm-welfare/caring-for-pigs
+S10 Ontario: Providing feed and water to pigs
+https://www.ontario.ca/page/providing-feed-and-water-pigs
+S11 University of Minnesota: Raising chickens for eggs
+https://extension.umn.edu/agriculture/animals-and-livestock/poultry/raising-chickens-for-eggs
+S12 Iowa State University: Estimating the Field Capacity of Farm Machines
+https://www.extension.iastate.edu/AGDM/crops/pdf/a3-24.pdf
+S13 MPSV: Nepřetržitý denní odpočinek
+https://ppropo.mpsv.cz/viii81nepretrzitydenniodpocinek
